@@ -1,0 +1,62 @@
+.firulete1 {
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  max-width: 400px;
+  margin: 3rem auto 3rem;
+}
+
+.contact {
+  position: absolute;
+  top: 1rem;
+  right: 2.5rem;
+  width: 300px;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8rem;
+}
+
+.paragraph {
+  width: 50%;
+  text-align: center;
+  color: #221de0;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-left: 6rem;
+}
+
+.spotify {
+  margin-top: 5rem;
+}
+
+.nypdContainer {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.nypd {
+  margin-left: -50px;
+  width: 1000px;
+}
+
+.hardCandy {
+  margin-left: -60px;
+  width: 400px;
+  position: relative;
+  top: 65px;
+}
+
+.firulete2 {
+  width: 200px;
+  position: absolute;
+  left: 0;
+  margin-top: -30px;
+}
