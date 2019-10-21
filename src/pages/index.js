@@ -8,6 +8,23 @@ import Contact from "../components/images/contact"
 import NYPD from "../components/images/nypd"
 import HardCandy from "../components/images/hard-candy"
 import Firulete2 from "../components/images/firulete2"
+import Uber from "../components/images/uber"
+import Speedy from "../components/images/speedy"
+import Chica from "../components/images/chica"
+import Burger from "../components/images/burger"
+import Cheetos from "../components/images/cheetos"
+import CheetosVideo from "../components/images/cheetos-video"
+import Firulete3 from "../components/images/firulete3"
+import Firulete4 from "../components/images/firulete4"
+import Adidas from "../components/images/adidas"
+import Cata from "../components/images/cata"
+import Firulete5 from "../components/images/firulete5"
+import Supreme from "../components/images/supreme"
+import Firulete6 from "../components/images/firulete6"
+import Army from "../components/images/army"
+import Firulete7 from "../components/images/firulete7"
+import Firulete8 from "../components/images/firulete8"
+import Wikichin from "../components/images/wikichin"
 
 import styles from "./index.module.css"
 
@@ -53,10 +70,11 @@ const IndexPage = () => (
       </p>
       <div className={styles.spotify}>
         <iframe
+          title="SpotifyIframe"
           src="https://open.spotify.com/embed/playlist/0Mv0b9aQLuyEUU5oSKzsrF"
           width="300"
           height="380"
-          frameborder="0"
+          frameBorder="0"
           allowtransparency="true"
           allow="encrypted-media"
         ></iframe>
@@ -72,6 +90,57 @@ const IndexPage = () => (
     </div>
     <div className={styles.firulete2}>
       <Firulete2 />
+    </div>
+    <div className={styles.uber}>
+      <Uber />
+    </div>
+    <div className={styles.speedy}>
+      <Speedy />
+    </div>
+    <div className={styles.chica}>
+      <Chica />
+    </div>
+    <div className={styles.burger}>
+      <Burger />
+    </div>
+    <div className={styles.cheetos}>
+      <Cheetos />
+    </div>
+    <div className={styles.cheetosVideo}>
+      <CheetosVideo />
+    </div>
+    <div className={styles.firulete3}>
+      <Firulete3 />
+    </div>
+    <div className={styles.firulete4}>
+      <Firulete4 />
+    </div>
+    <div className={styles.adidas}>
+      <Adidas />
+    </div>
+    <div className={styles.cata}>
+      <Cata />
+    </div>
+    <div className={styles.firulete5}>
+      <Firulete5 />
+    </div>
+    <div className={styles.supreme}>
+      <Supreme />
+    </div>
+    <div className={styles.firulete6}>
+      <Firulete6 />
+    </div>
+    <div className={styles.army}>
+      <Army />
+    </div>
+    <div className={styles.firulete7}>
+      <Firulete7 />
+    </div>
+    <div className={styles.firulete8}>
+      <Firulete8 />
+    </div>
+    <div className={styles.wikichin}>
+      <Wikichin />
     </div>
   </Layout>
 )

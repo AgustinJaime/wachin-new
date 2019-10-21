@@ -55,8 +55,119 @@
 }
 
 .firulete2 {
-  width: 200px;
   position: absolute;
   left: 0;
-  margin-top: -30px;
+  width: 200px;
+}
+
+.uber {
+  width: 500px;
+  transform: translate(652px, 10px);
+}
+
+.speedy {
+  width: 570px;
+  transform: translateX(200px);
+}
+
+.chica {
+  width: 950px;
+  transform: translate(270px, -260px);
+}
+
+.burger {
+  position: absolute;
+  width: 250px;
+  transform: translate(220px, -712px);
+}
+
+.cheetos {
+  position: absolute;
+  width: 350px;
+  transform: translate(697px, -397px);
+}
+
+.cheetosVideo {
+  position: absolute;
+  width: 527px;
+  transform: translate(638px, -205px);
+}
+
+.firulete3 {
+  position: absolute;
+  right: 0;
+  width: 140px;
+  transform: translate(0px, -770px);
+}
+
+.firulete4 {
+  position: absolute;
+  left: 0;
+  width: 400px;
+  transform: translate(-100px, -250px);
+}
+
+.adidas {
+  position: absolute;
+  left: 0;
+  width: 500px;
+  transform: translate(485px, 90px);
+}
+
+.cata {
+  position: absolute;
+  right: 0;
+  width: 390px;
+  transform: translate(-145px, 170px);
+  z-index: 2;
+}
+
+.firulete5 {
+  position: absolute;
+  right: 0;
+  width: 225px;
+  transform: translate(0px, -185px);
+}
+
+.supreme {
+  position: absolute;
+  right: 0;
+  width: 500px;
+  transform: translate(-96px, 797px);
+  z-index: 1;
+}
+
+.firulete6 {
+  position: absolute;
+  left: 0;
+  width: 150px;
+  transform: translate(0px, 800px);
+}
+
+.army {
+  position: absolute;
+  left: 0;
+  width: 700px;
+  transform: translate(10px, 900px);
+}
+
+.firulete7 {
+  position: absolute;
+  left: 0;
+  width: 250px;
+  transform: translate(409px, 1170px);
+}
+
+.firulete8 {
+  position: absolute;
+  right: 0;
+  width: 277px;
+  transform: translate(0, 945px);
+}
+
+.wikichin {
+  position: absolute;
+  left: 0;
+  width: 700px;
+  transform: translate(-60px, 1500px);
 }
