@@ -17,7 +17,7 @@ const Layout = ({ children }) => (
           color: #555;
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
             Helvetica, Arial, sans-serif;
-          font-size: 18px;
+          font-size: 1.25vw !important; /* 18px */
           line-height: 1.4;
           background-color: #ea5f52;
           /* Remove margin for main div that Gatsby mounts into */
