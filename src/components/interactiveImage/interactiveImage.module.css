@@ -1,0 +1,32 @@
+.imageContainer {
+  position: relative;
+  min-width: 200px;
+}
+
+.handle {
+  display: none;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #000000;
+  cursor: nesw-resize;
+}
+
+.handleNW {
+  top: -4px;
+  left: -4px;
+}
+
+.handleSW {
+  bottom: -4px;
+  left: -4px;
+}
+
+.handleSE {
+  bottom: -4px;
+  right: -4px;
+}
+
+.imageContainer:hover .handle {
+  display: block;
+}

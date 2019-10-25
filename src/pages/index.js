@@ -25,6 +25,7 @@ import Army from "../components/images/army"
 import Firulete7 from "../components/images/firulete7"
 import Firulete8 from "../components/images/firulete8"
 import Wikichin from "../components/images/wikichin"
+import InteractiveImage from "../components/interactiveImage/interactiveImage"
 
 import styles from "./index.module.css"
 
@@ -142,6 +143,9 @@ const IndexPage = () => (
     <div className={styles.wikichin}>
       <Wikichin />
     </div>
+    <InteractiveImage>
+      <Wikichin />
+    </InteractiveImage>
   </Layout>
 )
 
