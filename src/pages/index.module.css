@@ -45,12 +45,12 @@
 
 .nypd {
   margin-left: -3.125rem;
-  width: 62.5rem;
+  width: 56rem;
 }
 
 .hardCandy {
-  margin-left: -3.75rem;
-  width: 25rem;
+  margin-left: -4rem;
+  width: 23rem;
   position: relative;
   top: 4.0625rem;
 }
@@ -58,68 +58,69 @@
 .firulete2 {
   position: absolute;
   left: 0;
-  width: 12.5rem;
+  width: 9.5rem;
+  transform: translateY(-1rem);
 }
 
 .uber {
   width: 31.25rem;
-  transform: translate(40.75rem, 0.625rem);
+  transform: translate(34rem, 0.625rem);
 }
 
 .speedy {
-  width: 570px;
-  transform: translateX(200px);
+  width: 32rem;
+  transform: translateX(10rem);
 }
 
 .chica {
-  width: 35.625rem;
-  transform: translate(16.875rem, -16.25rem);
+  width: 53.625rem;
+  transform: translate(14rem, -14.25rem);
 }
 
 .burger {
   position: absolute;
   width: 15.625rem;
-  transform: translate(13.75rem, -44.5rem);
+  transform: translate(11rem, -40.5rem);
 }
 
 .cheetos {
   position: absolute;
-  width: 21.875rem;
-  transform: translate(43.5625rem, -24.8125rem);
+  width: 21rem;
+  transform: translate(38rem, -21rem);
 }
 
 .cheetosVideo {
   position: absolute;
   width: 32.9375rem;
-  transform: translate(39.875rem, -12.8125rem);
+  transform: translate(34rem, -9.5rem);
 }
 
 .firulete3 {
   position: absolute;
   right: 0;
   width: 8.75rem;
-  transform: translate(0px, -48.125rem);
+  transform: translate(0px, -43rem);
 }
 
 .firulete4 {
   position: absolute;
   left: 0;
   width: 25rem;
-  transform: translate(-6.25rem, -15.625rem);
+  transform: translate(-6.25rem, -13rem);
 }
 
 .adidas {
   position: absolute;
   left: 0;
   width: 31.25rem;
-  transform: translate(30.3125rem, 5.625rem);
+  transform: translate(24rem, 8rem);
 }
 
 .cata {
   position: absolute;
   right: 0;
   width: 24.375rem;
-  transform: translate(-9.0625rem, 10.625rem);
+  transform: translate(-5.5rem, 13rem);
   z-index: 2;
 }
 
@@ -133,37 +134,37 @@
 .supreme {
   position: absolute;
   right: 0;
-  width: 31.25rem;
-  transform: translate(-6rem, 49.8135rem);
+  width: 28.25rem;
+  transform: translate(-4.3rem, 52rem);
   z-index: 1;
 }
 
 .firulete6 {
   position: absolute;
   left: 0;
-  width: 9.375rem;
-  transform: translate(0px, 50rem);
+  width: 6.375rem;
+  transform: translate(0px, 52rem);
 }
 
 .army {
   position: absolute;
   left: 0;
-  width: 43.75rem;
+  width: 35.75rem;
   transform: translate(0.625rem, 56.25rem);
 }
 
 .firulete7 {
   position: absolute;
   left: 0;
-  width: 15.625rem;
-  transform: translate(25.5625rem, 74.125rem);
+  width: 11.625rem;
+  transform: translate(21.5625rem, 70.125rem);
 }
 
 .firulete8 {
   position: absolute;
   right: 0;
-  width: 17.3125rem;
-  transform: translate(0, 59.0625rem);
+  width: 14.3125rem;
+  transform: translate(0, 60.0625rem);
 }
 
 .wikichin {

@@ -143,9 +143,9 @@ const IndexPage = () => (
     <div className={styles.wikichin}>
       <Wikichin />
     </div>
-    <InteractiveImage>
+    {/* <InteractiveImage>
       <Wikichin />
-    </InteractiveImage>
+    </InteractiveImage> */}
   </Layout>
 )
 
