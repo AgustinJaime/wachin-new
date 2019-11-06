@@ -30,6 +30,7 @@
   font-size: 1.2rem;
   line-height: 1.2;
   margin-left: 6rem;
+  font-family: 'Claire Hand';
 }
 
 .spotify {
@@ -63,36 +64,56 @@
 }
 
 .uber {
-  width: 31.25rem;
-  transform: translate(34rem, 0.625rem);
+  width: 26rem;
+  transform: translate(36rem, 0.625rem);
+}
+
+.uber img {
+  width: 100%;
 }
 
 .speedy {
-  width: 32rem;
-  transform: translateX(10rem);
+  width: 28rem;
+  transform: translate(12rem, 1.5rem);
+}
+
+.speedy img {
+  width: 100%;
 }
 
 .chica {
   width: 53.625rem;
-  transform: translate(14rem, -14.25rem);
+  transform: translate(14rem, -12.25rem);
 }
 
 .burger {
   position: absolute;
   width: 15.625rem;
-  transform: translate(11rem, -40.5rem);
+  transform: translate(11rem, -38.5rem);
+}
+
+.burger img {
+  width: 100%;
 }
 
 .cheetos {
   position: absolute;
-  width: 21rem;
-  transform: translate(38rem, -21rem);
+  width: 19rem;
+  transform: translate(38rem, -20rem);
+}
+
+.cheetos img {
+  width: 100%;
 }
 
 .cheetosVideo {
   position: absolute;
-  width: 32.9375rem;
-  transform: translate(34rem, -9.5rem);
+  width: 29rem;
+  transform: translate(34rem, -8.5rem);
+}
+
+.cheetosVideo img {
+  width: 100%;
 }
 
 .firulete3 {
@@ -105,22 +126,26 @@
 .firulete4 {
   position: absolute;
   left: 0;
-  width: 25rem;
-  transform: translate(-6.25rem, -13rem);
+  width: 19rem;
+  transform: translate(-0.25rem, -13rem);
 }
 
 .adidas {
   position: absolute;
   left: 0;
-  width: 31.25rem;
-  transform: translate(24rem, 8rem);
+  width: 30rem;
+  transform: translate(23rem, 9rem);
+}
+
+.adidas img {
+  width: 100%;
 }
 
 .cata {
   position: absolute;
   right: 0;
   width: 24.375rem;
-  transform: translate(-5.5rem, 13rem);
+  transform: translate(-6.5rem, 13rem);
   z-index: 2;
 }
 
@@ -135,7 +160,7 @@
   position: absolute;
   right: 0;
   width: 28.25rem;
-  transform: translate(-4.3rem, 52rem);
+  transform: translate(-5.3rem, 52rem);
   z-index: 1;
 }
 
@@ -160,6 +185,12 @@
   transform: translate(21.5625rem, 70.125rem);
 }
 
+.unicef {
+  width: 38rem;
+  position: absolute;
+  transform: translate(28rem, 64.5rem);
+}
+
 .firulete8 {
   position: absolute;
   right: 0;
@@ -172,4 +203,62 @@
   left: 0;
   width: 43.75rem;
   transform: translate(-3.75rem, 93.75rem);
+}
+
+.resizeHandle {
+  width: 50px;
+  height: 50px;
+  background-color: #000000;
+}
+
+.cheetosGallery {
+  position: absolute;
+  width: 12rem;
+  transform: translate(18rem, -17rem);
+}
+
+.cheetos1 {
+  transform: translate(1rem, -6.5rem) rotate(-7deg);
+  z-index: 4;
+}
+
+.cheetos2 {
+  transform: translate(0, -13rem);
+  z-index: 2;
+}
+
+.cheetos3 {
+  transform: translate(2rem, -27rem) rotate(17deg);
+  z-index: 3;
+}
+
+.cheetos4 {
+  transform: translate(4.5rem, -41rem);
+  z-index: 1;
+}
+
+.bimboGallery {
+  position: absolute;
+  width: 12rem;
+  transform: translate(18rem, -17rem);
+}
+
+.bimbo1 {
+  transform: translate(1rem, -6.5rem) rotate(-7deg);
+  z-index: 4;
+}
+
+.bimbo2 {
+  transform: translate(0, -13rem);
+  z-index: 2;
+}
+
+.bimbo3 {
+  transform: translate(2rem, -27rem) rotate(17deg);
+  z-index: 3;
+}
+
+.bimbo4 {
+  transform: translate(4.5rem, -41rem);
+  z-index: 1;
 }

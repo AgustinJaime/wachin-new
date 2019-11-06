@@ -8,15 +8,15 @@ import Contact from "../components/images/contact"
 import NYPD from "../components/images/nypd"
 import HardCandy from "../components/images/hard-candy"
 import Firulete2 from "../components/images/firulete2"
-import Uber from "../components/images/uber"
-import Speedy from "../components/images/speedy"
+import Uber from "../images/uber.gif"
+import Speedy from "../images/speedy.gif"
 import Chica from "../components/images/chica"
-import Burger from "../components/images/burger"
-import Cheetos from "../components/images/cheetos"
-import CheetosVideo from "../components/images/cheetos-video"
+import Burger from "../images/hamburguesa.gif"
+import Cheetos1 from "../images/cheetos1.gif"
+import Cheetos2 from "../images/cheetos2.gif"
 import Firulete3 from "../components/images/firulete3"
 import Firulete4 from "../components/images/firulete4"
-import Adidas from "../components/images/adidas"
+import Adidas from "../images/adidas.gif"
 import Cata from "../components/images/cata"
 import Firulete5 from "../components/images/firulete5"
 import Supreme from "../components/images/supreme"
@@ -24,9 +24,19 @@ import Firulete6 from "../components/images/firulete6"
 import Army from "../components/images/army"
 import Firulete7 from "../components/images/firulete7"
 import Firulete8 from "../components/images/firulete8"
+import Unicef from "../components/images/unicef"
 import Wikichin from "../components/images/wikichin"
-import InteractiveImage from "../components/interactiveImage/interactiveImage"
+import CheetosStill1 from "../components/images/cheetosStill1"
+import CheetosStill2 from "../components/images/cheetosStill2"
+import CheetosStill3 from "../components/images/cheetosStill3"
+import CheetosStill4 from "../components/images/cheetosStill4"
+import BimboStill1 from "../components/images/bimboStill1"
+import BimboStill2 from "../components/images/bimboStill2"
+import BimboStill3 from "../components/images/bimboStill3"
+import BimboStill4 from "../components/images/bimboStill4"
+// import InteractiveImage from "../components/interactiveImage/interactiveImage"
 
+import "./styles.css"
 import styles from "./index.module.css"
 
 const IndexPage = () => (
@@ -93,22 +103,28 @@ const IndexPage = () => (
       <Firulete2 />
     </div>
     <div className={styles.uber}>
-      <Uber />
+      <img src={Uber}></img>
     </div>
     <div className={styles.speedy}>
-      <Speedy />
+      <img src={Speedy}></img>
     </div>
     <div className={styles.chica}>
       <Chica />
     </div>
     <div className={styles.burger}>
-      <Burger />
+      <img src={Burger}></img>
+    </div>
+    <div className={styles.cheetosGallery}>
+      <CheetosStill1 className={styles.cheetos1} />
+      <CheetosStill2 className={styles.cheetos2} />
+      <CheetosStill3 className={styles.cheetos3} />
+      <CheetosStill4 className={styles.cheetos4} />
     </div>
     <div className={styles.cheetos}>
-      <Cheetos />
+      <img src={Cheetos2}></img>
     </div>
     <div className={styles.cheetosVideo}>
-      <CheetosVideo />
+      <img src={Cheetos1}></img>
     </div>
     <div className={styles.firulete3}>
       <Firulete3 />
@@ -117,11 +133,17 @@ const IndexPage = () => (
       <Firulete4 />
     </div>
     <div className={styles.adidas}>
-      <Adidas />
+      <img src={Adidas}></img>
     </div>
     <div className={styles.cata}>
       <Cata />
     </div>
+    {/* <div className={styles.bimboGallery}>
+      <BimboStill1 className={styles.bimbo1} />
+      <BimboStill2 className={styles.bimbo2} />
+      <BimboStill3 className={styles.bimbo3} />
+      <BimboStill4 className={styles.bimbo4} />
+    </div> */}
     <div className={styles.firulete5}>
       <Firulete5 />
     </div>
@@ -140,12 +162,12 @@ const IndexPage = () => (
     <div className={styles.firulete8}>
       <Firulete8 />
     </div>
+    <div className={styles.unicef}>
+      <Unicef />
+    </div>
     <div className={styles.wikichin}>
       <Wikichin />
     </div>
-    {/* <InteractiveImage>
-      <Wikichin />
-    </InteractiveImage> */}
   </Layout>
 )
 

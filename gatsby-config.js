@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Wachin`,
+    description: ``,
+    author: `@garzito`,
   },
   plugins: [
     `gatsby-plugin-emotion`,
@@ -12,6 +12,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `fonts`,
+        path: `${__dirname}/src/fonts/`,
       },
     },
     `gatsby-transformer-sharp`,

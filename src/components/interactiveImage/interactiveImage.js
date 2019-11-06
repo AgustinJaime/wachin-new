@@ -1,11 +1,10 @@
-import React from "react"
+import React, { useEffect } from "react"
 import styles from "./interactiveImage.module.css"
 
 export const InteractiveImage = props => {
   let target = null
 
-  function startResize(e) {
-    target = e.target
+  useEffect(() => {
     window.addEventListener(
       "dragstart",
       e => {
@@ -14,8 +13,18 @@ export const InteractiveImage = props => {
       },
       false
     )
+  })
+
+  function startResize(e) {
+    target = e.target
     window.addEventListener("mousemove", startResizing, false)
     window.addEventListener("mouseup", finishResize, false)
+  }
+
+  function startDrag(e) {
+    target = e.target
+    window.addEventListener("mousemove", startDragging, false)
+    window.addEventListener("mouseup", finishDragging, false)
   }
 
   function startResizing(e) {
@@ -24,13 +33,23 @@ export const InteractiveImage = props => {
     parent.style.height = `${e.clientY - parent.offsetTop}px`
   }
 
+  function startDragging(e) {
+    const parent = target.parentElement
+    parent.style.left = `${e.clientX}px`
+    parent.style.top = `${e.clientY}px`
+  }
+
   function finishResize(e) {
     window.removeEventListener("mousemove", startResizing, false)
   }
 
+  function finishDragging(e) {
+    window.removeEventListener("mousemove", startDragging, false)
+  }
+
   return (
     <div className={styles.imageContainer}>
-      {props.children}
+      <div onMouseDown={startDrag}>{props.children}</div>
       <div
         className={`${styles.handle} ${styles.handleNW}`}
         onMouseDown={startResize}

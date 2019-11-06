@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Claire Hand';
+    src: url('ClaireHand-Bold.woff2') format('woff2'),
+        url('ClaireHand-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Claire Hand';
+    src: url('ClaireHand-Regular.woff2') format('woff2'),
+        url('ClaireHand-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Claire Hand';
+    src: url('ClaireHand-Light.woff2') format('woff2'),
+        url('ClaireHand-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
