@@ -30,7 +30,7 @@
   font-size: 1.2rem;
   line-height: 1.2;
   margin-left: 6rem;
-  font-family: 'Claire Hand';
+  font-family: "Claire Hand";
 }
 
 .spotify {
@@ -54,6 +54,7 @@
   width: 23rem;
   position: relative;
   top: 4.0625rem;
+  cursor: pointer;
 }
 
 .firulete2 {
@@ -90,6 +91,7 @@
   position: absolute;
   width: 15.625rem;
   transform: translate(11rem, -38.5rem);
+  cursor: pointer;
 }
 
 .burger img {
@@ -186,9 +188,9 @@
 }
 
 .unicef {
-  width: 38rem;
+  width: 36rem;
   position: absolute;
-  transform: translate(28rem, 64.5rem);
+  transform: translate(28.8rem, 64.5rem);
 }
 
 .firulete8 {
@@ -202,7 +204,7 @@
   position: absolute;
   left: 0;
   width: 43.75rem;
-  transform: translate(-3.75rem, 93.75rem);
+  transform: translate(-3.75rem, 109rem);
 }
 
 .resizeHandle {
@@ -215,6 +217,8 @@
   position: absolute;
   width: 12rem;
   transform: translate(18rem, -17rem);
+  height: 0;
+  cursor: pointer;
 }
 
 .cheetos1 {
@@ -239,26 +243,123 @@
 
 .bimboGallery {
   position: absolute;
-  width: 12rem;
-  transform: translate(18rem, -17rem);
+  width: 13rem;
+  transform: translate(17rem, 36rem);
+  height: 0;
+  cursor: pointer;
 }
 
 .bimbo1 {
-  transform: translate(1rem, -6.5rem) rotate(-7deg);
-  z-index: 4;
-}
-
-.bimbo2 {
-  transform: translate(0, -13rem);
+  transform: translate(8rem, -5.5rem) rotate(-7deg);
   z-index: 2;
 }
 
+.bimbo2 {
+  transform: translate(-2rem, -19rem) rotate(-12deg);
+  z-index: 1;
+}
+
 .bimbo3 {
-  transform: translate(2rem, -27rem) rotate(17deg);
-  z-index: 3;
+  transform: translate(2rem, -27rem) rotate(-9deg);
+  z-index: 4;
 }
 
 .bimbo4 {
-  transform: translate(4.5rem, -41rem);
+  transform: translate(5rem, -43.5rem) rotate(5deg);
+  z-index: 3;
+}
+
+.cliniqueGallery {
+  position: absolute;
+  width: 13rem;
+  transform: translate(7rem, 78rem);
+  height: 0;
+  cursor: pointer;
+}
+
+.clinique1 {
+  transform: rotate(8deg);
+  z-index: 6;
+}
+
+.clinique2 {
+  transform: translate(0rem, -7.5rem) rotate(6deg);
+  z-index: 5;
+}
+
+.clinique3 {
+  transform: translate(-5rem, -22.5rem) rotate(15deg);
+  z-index: 3;
+}
+
+.clinique4 {
+  transform: translate(-3rem, -37.5rem);
+  z-index: 4;
+}
+
+.clinique5 {
+  transform: translate(3.5rem, -47rem);
   z-index: 1;
+}
+
+.clinique6 {
+  transform: translate(2rem, -56rem);
+  z-index: 2;
+}
+
+.palomitasGallery {
+  position: absolute;
+  width: 22rem;
+  transform: translate(33rem, 89rem);
+  height: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.palomitas1 {
+  z-index: 1;
+  transform: translate(5rem, 9rem);
+}
+
+.palomitas2 {
+  z-index: 2;
+  transform: translate(0, -16rem) rotate(-5deg);
+}
+
+.palomitas3 {
+  z-index: 3;
+  transform: translate(12rem, -31rem) rotate(12deg);
+}
+
+.firulete9 {
+  position: absolute;
+  right: 0;
+  width: 16rem;
+  transform: translate(-20rem, 113rem);
+}
+
+.backToTop {
+  position: absolute;
+  width: 10rem;
+  right: 0;
+  transform: translate(-1rem, 117rem);
+  z-index: 1;
+}
+
+.firulete10 {
+  position: absolute;
+  right: 0;
+  width: 14rem;
+  transform: translate(0, 113rem);
+}
+
+.footer {
+  transform: translate(0, 128rem);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: #221de0;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-family: "Claire Hand";
 }
