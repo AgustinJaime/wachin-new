@@ -87,10 +87,20 @@
   transform: translate(14rem, -12.25rem);
 }
 
-.burger {
+.burgerContainer {
   position: absolute;
-  width: 15.625rem;
-  transform: translate(11rem, -38.5rem);
+  transform: translate(12rem, -37rem);
+}
+
+.corazon {
+  width: 13rem;
+}
+
+.burger {
+  width: 13rem;
+  position: absolute;
+  top: 0;
+  left: 0;
   cursor: pointer;
 }
 
@@ -203,8 +213,8 @@
 .wikichin {
   position: absolute;
   left: 0;
-  width: 43.75rem;
-  transform: translate(-3.75rem, 109rem);
+  width: 40rem;
+  transform: translate(1.5rem, 109rem);
 }
 
 .resizeHandle {

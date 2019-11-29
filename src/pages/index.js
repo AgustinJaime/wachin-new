@@ -11,6 +11,7 @@ import Firulete2 from "../components/images/firulete2"
 import Uber from "../images/uber.gif"
 import Speedy from "../images/speedy.gif"
 import Chica from "../components/images/chica"
+import Corazon from "../components/images/corazon"
 import Burger from "../images/hamburguesa.gif"
 import Cheetos1 from "../images/cheetos1.gif"
 import Cheetos2 from "../images/cheetos2.gif"
@@ -139,11 +140,16 @@ const IndexPage = () => {
         <div className={styles.chica}>
           <Chica />
         </div>
-        <div
-          className={styles.burger}
-          onClick={() => setOpenedGallery("burger")}
-        >
-          <img src={Burger}></img>
+        <div className={styles.burgerContainer}>
+          <div className={styles.corazon}>
+            <Corazon />
+          </div>
+          <div
+            className={styles.burger}
+            onClick={() => setOpenedGallery("burger")}
+          >
+            <img src={Burger}></img>
+          </div>
         </div>
         <div
           className={styles.cheetosGallery}
