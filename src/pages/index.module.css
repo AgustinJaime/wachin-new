@@ -203,6 +203,10 @@
   transform: translate(28.8rem, 64.5rem);
 }
 
+.unicef img {
+  width: 100%;
+}
+
 .firulete8 {
   position: absolute;
   right: 0;

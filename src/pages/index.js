@@ -25,7 +25,7 @@ import Firulete6 from "../components/images/firulete6"
 import Army from "../components/images/army"
 import Firulete7 from "../components/images/firulete7"
 import Firulete8 from "../components/images/firulete8"
-import Unicef from "../components/images/unicef"
+import Unicef from "../images/unicef.gif"
 import Wikichin from "../components/images/wikichin"
 import CheetosStill1 from "../components/images/cheetosStill1"
 import CheetosStill2 from "../components/images/cheetosStill2"
@@ -206,7 +206,7 @@ const IndexPage = () => {
           <Firulete8 />
         </div>
         <div className={styles.unicef}>
-          <Unicef />
+          <img src={Unicef}></img>
         </div>
         <div
           className={styles.cliniqueGallery}
