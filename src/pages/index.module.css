@@ -6,8 +6,13 @@
 }
 
 .logo {
+  position: relative;
   max-width: 25rem;
-  margin: 3rem auto 3rem;
+  margin: 3rem auto 10rem;
+}
+
+.logo:hover .cta {
+  opacity: 1;
 }
 
 .contact {
@@ -17,25 +22,37 @@
   width: 18.75rem;
 }
 
-.textContainer {
+.textAndSpotifyContainer {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-top: 8rem;
 }
 
+.textContainer {
+  position: absolute;
+  left: 0;
+  width: 70%;
+}
+
+.textContainer:hover .cta {
+  opacity: 1;
+}
+
 .paragraph {
-  width: 50%;
+  width: 70%;
   text-align: center;
   color: #221de0;
-  font-size: 1.2rem;
-  line-height: 1.2;
+  font-size: 1.1rem;
+  line-height: 1.4;
   margin-left: 6rem;
   font-family: "Claire Hand";
 }
 
 .spotify {
-  margin-top: 5rem;
+  margin-bottom: 5rem;
   width: 18.75rem;
+  transform: translate(-3rem, 5rem);
 }
 
 .nypdContainer {
@@ -76,10 +93,16 @@
 .speedy {
   width: 28rem;
   transform: translate(12rem, 1.5rem);
+  z-index: 10;
 }
 
 .speedy img {
   width: 100%;
+}
+
+.uber:hover~.CTA_videos,
+.speedy:hover~.CTA_videos {
+  opacity: 1 !important;
 }
 
 .chica {
@@ -376,4 +399,30 @@
   font-size: 1.2rem;
   line-height: 1.2;
   font-family: "Claire Hand";
+}
+
+/* CTAs */
+.cta {
+  opacity: 0;
+  transition: opacity 100ms;
+}
+
+.CTA_bio {
+  position: absolute;
+  top: -4rem;
+  left: 3rem;
+  width: 41rem;
+}
+
+.CTA_chino {
+  position: absolute;
+  bottom: -4rem;
+  left: 5rem;
+  width: 15rem;
+}
+
+.CTA_videos {
+  position: absolute;
+  width: 24rem;
+  transform: translate(7rem, -28rem);
 }

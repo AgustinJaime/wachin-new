@@ -47,7 +47,9 @@ import PalomitasStill3 from "../components/images/palomitasStill3"
 import BackToTop from "../components/images/backToTop"
 import Firulete9 from "../components/images/firulete9"
 import Firulete10 from "../components/images/firulete10"
-// import InteractiveImage from "../components/interactiveImage/interactiveImage"
+import CTA_BIO from "../components/images/CTA/bio"
+import CTA_Chino from "../components/images/CTA/chino"
+import CTA_Videos from "../components/images/CTA/Videos"
 
 import CheetosGallery from "../components/CheetosGallery"
 import BimboGallery from "../components/BimboGallery"
@@ -74,37 +76,45 @@ const IndexPage = () => {
         <h1>
           <div className={styles.logo}>
             <LogoWachin />
+            <div className={`${styles.CTA_chino} ${styles.cta}`}>
+              <CTA_Chino />
+            </div>
           </div>
         </h1>
         <div className={styles.contact}>
           <Contact />
         </div>
 
-        <div className={styles.textContainer}>
-          <p className={styles.paragraph}>
-            Wachín es el alter ego de
-            <br />
-            <strong>Martín Pimentel + Bruno Bengen</strong>
-            <br />
-            <br />
-            Siempre divertido, nunca indivertido.
-            <br />
-            Esta dupla argentina combina una narrativa innovadora
-            <br />
-            con un toque fresco y sexy. Buscando crear impacto, encaran
-            <br />
-            todos los proyectos con una tendencia por la innovación
-            <br />
-            en el discurso y la técnica. Combinan distintas disciplinas,
-            <br />
-            cómo la foto, el video y la animación aplicándolo a contenidos
-            <br />
-            tradicionales y no tradicionales, aspirando siempre a la mejor
-            <br />
-            calidad. Su trabajo se caracteriza por hacer de cada proyecto
-            <br />
-            una historia única. Desde México para todo el mundo.
-          </p>
+        <div className={styles.textAndSpotifyContainer}>
+          <div className={styles.textContainer}>
+            <p className={styles.paragraph}>
+              Wachín es el alter ego de
+              <br />
+              <strong>Martín Pimentel + Bruno Bengen</strong>
+              <br />
+              <br />
+              Siempre divertido, nunca indivertido.
+              <br />
+              Esta dupla argentina combina una narrativa innovadora
+              <br />
+              con un toque fresco y sexy. Buscando crear impacto, encaran
+              <br />
+              todos los proyectos con una tendencia por la innovación
+              <br />
+              en el discurso y la técnica. Combinan distintas disciplinas,
+              <br />
+              cómo la foto, el video y la animación aplicándolo a contenidos
+              <br />
+              tradicionales y no tradicionales, aspirando siempre a la mejor
+              <br />
+              calidad. Su trabajo se caracteriza por hacer de cada proyecto
+              <br />
+              una historia única. Desde México para todo el mundo.
+            </p>
+            <div className={`${styles.CTA_bio} ${styles.cta}`}>
+              <CTA_BIO />
+            </div>
+          </div>
           <div className={styles.spotify}>
             <iframe
               title="SpotifyIframe"
@@ -136,6 +146,9 @@ const IndexPage = () => {
         </div>
         <div className={styles.speedy}>
           <img src={Speedy}></img>
+        </div>
+        <div className={`${styles.CTA_videos} ${styles.cta}`}>
+          <CTA_Videos />
         </div>
         <div className={styles.chica}>
           <Chica />
