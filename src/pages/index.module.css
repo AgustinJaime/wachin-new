@@ -84,6 +84,7 @@
 .uber {
   width: 26rem;
   transform: translate(36rem, 0.625rem);
+  cursor: pointer;
 }
 
 .uber img {
@@ -93,7 +94,7 @@
 .speedy {
   width: 28rem;
   transform: translate(12rem, 1.5rem);
-  z-index: 10;
+  cursor: pointer;
 }
 
 .speedy img {
@@ -102,12 +103,21 @@
 
 .uber:hover~.CTA_videos,
 .speedy:hover~.CTA_videos {
-  opacity: 1 !important;
+  opacity: 1;
 }
 
-.chica {
-  width: 53.625rem;
-  transform: translate(14rem, -12.25rem);
+.chica1 {
+  width: 33.8rem;
+  transform: translate(34rem, -12.25rem);
+}
+
+.chica1:hover+.cta {
+  opacity: 1;
+}
+
+.chica2 {
+  width: 53.8rem;
+  transform: translate(14rem, -12.3rem);
 }
 
 .burgerContainer {
@@ -425,4 +435,12 @@
   position: absolute;
   width: 24rem;
   transform: translate(7rem, -28rem);
+}
+
+.CTA_rubia {
+  position: absolute;
+  width: 38rem;
+  transform: translate(36rem, -44rem);
+  pointer-events: none;
+  z-index: 1;
 }

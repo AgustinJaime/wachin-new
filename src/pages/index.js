@@ -10,7 +10,8 @@ import HardCandy from "../components/images/hard-candy"
 import Firulete2 from "../components/images/firulete2"
 import Uber from "../images/uber.gif"
 import Speedy from "../images/speedy.gif"
-import Chica from "../components/images/chica"
+import Chica1 from "../components/images/chica-1"
+import Chica2 from "../components/images/chica-2"
 import Corazon from "../components/images/corazon"
 import Burger from "../images/hamburguesa.gif"
 import Cheetos1 from "../images/cheetos1.gif"
@@ -49,7 +50,8 @@ import Firulete9 from "../components/images/firulete9"
 import Firulete10 from "../components/images/firulete10"
 import CTA_BIO from "../components/images/CTA/bio"
 import CTA_Chino from "../components/images/CTA/chino"
-import CTA_Videos from "../components/images/CTA/Videos"
+import CTA_Videos from "../components/images/CTA/videos"
+import CTA_Rubia from "../components/images/CTA/rubia"
 
 import CheetosGallery from "../components/CheetosGallery"
 import BimboGallery from "../components/BimboGallery"
@@ -150,8 +152,14 @@ const IndexPage = () => {
         <div className={`${styles.CTA_videos} ${styles.cta}`}>
           <CTA_Videos />
         </div>
-        <div className={styles.chica}>
-          <Chica />
+        <div className={styles.chica1}>
+          <Chica1 />
+        </div>
+        <div className={`${styles.CTA_rubia} ${styles.cta}`}>
+          <CTA_Rubia />
+        </div>
+        <div className={styles.chica2}>
+          <Chica2 />
         </div>
         <div className={styles.burgerContainer}>
           <div className={styles.corazon}>
