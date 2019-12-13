@@ -101,8 +101,8 @@
   width: 100%;
 }
 
-.uber:hover~.CTA_videos,
-.speedy:hover~.CTA_videos {
+.uber:hover ~ .CTA_videos,
+.speedy:hover ~ .CTA_videos {
   opacity: 1;
 }
 
@@ -111,7 +111,7 @@
   transform: translate(34rem, -12.25rem);
 }
 
-.chica1:hover+.cta {
+.chica1:hover + .cta {
   opacity: 1;
 }
 
@@ -139,6 +139,10 @@
 
 .burger img {
   width: 100%;
+}
+
+.burgerContainer:hover + .cta {
+  opacity: 1;
 }
 
 .cheetos {
@@ -180,10 +184,15 @@
   left: 0;
   width: 30rem;
   transform: translate(23rem, 9rem);
+  cursor: pointer;
 }
 
 .adidas img {
   width: 100%;
+}
+
+.adidas:hover + .cta {
+  opacity: 1;
 }
 
 .cata {
@@ -192,6 +201,10 @@
   width: 24.375rem;
   transform: translate(-6.5rem, 13rem);
   z-index: 2;
+}
+
+.cata:hover + .cta {
+  opacity: 1;
 }
 
 .firulete5 {
@@ -223,6 +236,10 @@
   transform: translate(0.625rem, 56.25rem);
 }
 
+.army:hover + .cta {
+  opacity: 1;
+}
+
 .firulete7 {
   position: absolute;
   left: 0;
@@ -234,10 +251,15 @@
   width: 36rem;
   position: absolute;
   transform: translate(28.8rem, 64.5rem);
+  cursor: pointer;
 }
 
 .unicef img {
   width: 100%;
+}
+
+.unicef:hover + .cta {
+  opacity: 1;
 }
 
 .firulete8 {
@@ -423,24 +445,51 @@
   left: 3rem;
   width: 41rem;
 }
-
 .CTA_chino {
   position: absolute;
   bottom: -4rem;
   left: 5rem;
   width: 15rem;
 }
-
 .CTA_videos {
   position: absolute;
   width: 24rem;
   transform: translate(7rem, -28rem);
 }
-
 .CTA_rubia {
   position: absolute;
   width: 38rem;
   transform: translate(36rem, -44rem);
   pointer-events: none;
   z-index: 1;
+}
+.CTA_burger {
+  position: absolute;
+  width: 15rem;
+  transform: translate(-2rem, -36rem);
+  pointer-events: none;
+}
+.CTA_adidas {
+  position: absolute;
+  width: 15rem;
+  transform: translate(11rem, 12rem);
+  pointer-events: none;
+}
+.CTA_cata {
+  position: absolute;
+  width: 8rem;
+  transform: translate(50rem, 12rem);
+  pointer-events: none;
+}
+.CTA_army {
+  position: absolute;
+  width: 28rem;
+  transform: translate(1rem, 55rem);
+  pointer-events: none;
+}
+.CTA_unicef {
+  position: absolute;
+  width: 23rem;
+  transform: translate(35rem, 67rem);
+  pointer-events: none;
 }

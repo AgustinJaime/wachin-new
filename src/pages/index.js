@@ -52,6 +52,11 @@ import CTA_BIO from "../components/images/CTA/bio"
 import CTA_Chino from "../components/images/CTA/chino"
 import CTA_Videos from "../components/images/CTA/videos"
 import CTA_Rubia from "../components/images/CTA/rubia"
+import CTA_Burger from "../components/images/CTA/burger"
+import CTA_Adidas from "../components/images/CTA/adidas"
+import CTA_Cata from "../components/images/CTA/cata"
+import CTA_Army from "../components/images/CTA/army"
+import CTA_Unicef from "../components/images/CTA/unicef"
 
 import CheetosGallery from "../components/CheetosGallery"
 import BimboGallery from "../components/BimboGallery"
@@ -172,6 +177,9 @@ const IndexPage = () => {
             <img src={Burger}></img>
           </div>
         </div>
+        <div className={`${styles.CTA_burger} ${styles.cta}`}>
+          <CTA_Burger />
+        </div>
         <div
           className={styles.cheetosGallery}
           onClick={() => setOpenedGallery("cheetos")}
@@ -196,8 +204,14 @@ const IndexPage = () => {
         <div className={styles.adidas}>
           <img src={Adidas}></img>
         </div>
+        <div className={`${styles.CTA_adidas} ${styles.cta}`}>
+          <CTA_Adidas />
+        </div>
         <div className={styles.cata}>
           <Cata />
+        </div>
+        <div className={`${styles.CTA_cata} ${styles.cta}`}>
+          <CTA_Cata />
         </div>
         <div
           className={styles.bimboGallery}
@@ -220,6 +234,9 @@ const IndexPage = () => {
         <div className={styles.army}>
           <Army />
         </div>
+        <div className={`${styles.CTA_army} ${styles.cta}`}>
+          <CTA_Army />
+        </div>
         <div className={styles.firulete7}>
           <Firulete7 />
         </div>
@@ -228,6 +245,9 @@ const IndexPage = () => {
         </div>
         <div className={styles.unicef}>
           <img src={Unicef}></img>
+        </div>
+        <div className={`${styles.CTA_unicef} ${styles.cta}`}>
+          <CTA_Unicef />
         </div>
         <div
           className={styles.cliniqueGallery}
