@@ -1,7 +1,7 @@
 import React from "react"
 import { Global, css } from "@emotion/core"
 
-const Layout = ({ children }) => (
+const Layout = ({ noscroll, children }) => (
   <>
     <Global
       styles={css`
@@ -21,6 +21,7 @@ const Layout = ({ children }) => (
           font-size: 1.25vw !important; /* 18px */
           line-height: 1.4;
           background-color: #ea5f52;
+          overflow: ${noscroll ? "hidden" : "initial"};
           /* Remove margin for main div that Gatsby mounts into */
           > div {
             margin-top: 0;

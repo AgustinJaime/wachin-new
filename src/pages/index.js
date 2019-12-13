@@ -75,10 +75,12 @@ import styles from "./index.module.css"
 const IndexPage = () => {
   const [openedGallery, setOpenedGallery] = useState(null)
   const closeGallery = () => setOpenedGallery(null)
+  const [playingVideo, setPlayingVideo] = useState("")
+  const clearPlayingVideo = () => setPlayingVideo("")
 
   return (
     <>
-      <Layout>
+      <Layout noscroll={!!playingVideo}>
         <SEO title="Home" />
         <div className={styles.firulete1}>
           <Firulete1 />
@@ -154,10 +156,13 @@ const IndexPage = () => {
         <div className={styles.firulete2}>
           <Firulete2 />
         </div>
-        <div className={styles.uber}>
+        <div className={styles.uber} onClick={() => setPlayingVideo("uber")}>
           <img src={Uber}></img>
         </div>
-        <div className={styles.speedy}>
+        <div
+          className={styles.speedy}
+          onClick={() => setPlayingVideo("speedy")}
+        >
           <img src={Speedy}></img>
         </div>
         <div className={`${styles.CTA_videos} ${styles.cta}`}>
@@ -198,7 +203,10 @@ const IndexPage = () => {
         <div className={styles.cheetos}>
           <img src={Cheetos2}></img>
         </div>
-        <div className={styles.cheetosVideo}>
+        <div
+          className={styles.cheetosVideo}
+          onClick={() => setPlayingVideo("cheetos")}
+        >
           <img src={Cheetos1}></img>
         </div>
         <div className={styles.firulete3}>
@@ -207,7 +215,10 @@ const IndexPage = () => {
         <div className={styles.firulete4}>
           <Firulete4 />
         </div>
-        <div className={styles.adidas}>
+        <div
+          className={styles.adidas}
+          onClick={() => setPlayingVideo("adidas")}
+        >
           <img src={Adidas}></img>
         </div>
         <div className={`${styles.CTA_adidas} ${styles.cta}`}>
@@ -249,7 +260,10 @@ const IndexPage = () => {
         <div className={styles.firulete8}>
           <Firulete8 />
         </div>
-        <div className={styles.unicef}>
+        <div
+          className={styles.unicef}
+          onClick={() => setPlayingVideo("unicef")}
+        >
           <img src={Unicef}></img>
         </div>
         <div className={`${styles.CTA_unicef} ${styles.cta}`}>
@@ -305,6 +319,71 @@ const IndexPage = () => {
         <PalomitasGallery close={closeGallery} />
       )}
       {openedGallery === "burger" && <BurgerGallery close={closeGallery} />}
+
+      {playingVideo === "speedy" && (
+        <div className={styles.videoOverlay} onClick={clearPlayingVideo}>
+          <iframe
+            src="https://player.vimeo.com/video/185378818?autoplay=1&title=0&byline=0&portrait=0"
+            width="1200"
+            height="675"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+          ></iframe>
+        </div>
+      )}
+
+      {playingVideo === "cheetos" && (
+        <div className={styles.videoOverlay} onClick={clearPlayingVideo}>
+          <iframe
+            src="https://player.vimeo.com/video/259506177?autoplay=1&title=0&byline=0&portrait=0"
+            width="1200"
+            height="675"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+          ></iframe>
+        </div>
+      )}
+
+      {playingVideo === "adidas" && (
+        <div className={styles.videoOverlay} onClick={clearPlayingVideo}>
+          <iframe
+            src="https://player.vimeo.com/video/268828753?autoplay=1&title=0&byline=0&portrait=0"
+            width="1200"
+            height="675"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+          ></iframe>
+        </div>
+      )}
+
+      {playingVideo === "uber" && (
+        <div className={styles.videoOverlay} onClick={clearPlayingVideo}>
+          <iframe
+            src="https://player.vimeo.com/video/363331676?autoplay=1&title=0&byline=0&portrait=0"
+            width="1200"
+            height="675"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+          ></iframe>
+        </div>
+      )}
+
+      {playingVideo === "unicef" && (
+        <div className={styles.videoOverlay} onClick={clearPlayingVideo}>
+          <iframe
+            src="https://player.vimeo.com/video/330861127?autoplay=1&title=0&byline=0&portrait=0"
+            width="1200"
+            height="675"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+          ></iframe>
+        </div>
+      )}
     </>
   )
 }

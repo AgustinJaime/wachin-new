@@ -163,6 +163,7 @@
   position: absolute;
   width: 29rem;
   transform: translate(34rem, -8.5rem);
+  cursor: pointer;
 }
 
 .cheetosVideo img {
@@ -432,6 +433,19 @@
   right: 0;
   width: 13.13rem;
   transform: translate(0, 113rem);
+}
+
+.videoOverlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 20;
 }
 
 .footer {
