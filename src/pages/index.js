@@ -50,6 +50,7 @@ import Firulete9 from "../components/images/firulete9"
 import Firulete10 from "../components/images/firulete10"
 import CTA_BIO from "../components/images/CTA/bio"
 import CTA_Chino from "../components/images/CTA/chino"
+import CTA_Rocklets from "../components/images/CTA/rocklets"
 import CTA_Videos from "../components/images/CTA/videos"
 import CTA_Rubia from "../components/images/CTA/rubia"
 import CTA_Burger from "../components/images/CTA/burger"
@@ -57,6 +58,8 @@ import CTA_Adidas from "../components/images/CTA/adidas"
 import CTA_Cata from "../components/images/CTA/cata"
 import CTA_Army from "../components/images/CTA/army"
 import CTA_Unicef from "../components/images/CTA/unicef"
+import CTA_Clinique from "../components/images/CTA/clinique"
+import CTA_Palomitas from "../components/images/CTA/palomitas"
 
 import CheetosGallery from "../components/CheetosGallery"
 import BimboGallery from "../components/BimboGallery"
@@ -143,6 +146,9 @@ const IndexPage = () => {
             onClick={() => setOpenedGallery("rocklets")}
           >
             <HardCandy />
+          </div>
+          <div className={`${styles.CTA_rocklets} ${styles.cta}`}>
+            <CTA_Rocklets />
           </div>
         </div>
         <div className={styles.firulete2}>
@@ -260,6 +266,9 @@ const IndexPage = () => {
           <CliniqueStill5 className={styles.clinique5} />
           <CliniqueStill6 className={styles.clinique6} />
         </div>
+        <div className={`${styles.CTA_clinique} ${styles.cta}`}>
+          <CTA_Clinique />
+        </div>
         <div
           className={styles.palomitasGallery}
           onClick={() => setOpenedGallery("palomitas")}
@@ -267,6 +276,9 @@ const IndexPage = () => {
           <PalomitasStill1 className={styles.palomitas1} />
           <PalomitasStill2 className={styles.palomitas2} />
           <PalomitasStill3 className={styles.palomitas3} />
+        </div>
+        <div className={`${styles.CTA_palomitas} ${styles.cta}`}>
+          <CTA_Palomitas />
         </div>
         <div className={styles.wikichin}>
           <Wikichin />
