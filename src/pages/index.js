@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import useBreakpoint from "../helpers/useBreakpointHook"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -72,7 +73,14 @@ import "react-image-lightbox/style.css"
 import "./styles.css"
 import styles from "./index.module.css"
 
+const queries = {
+  xs: "(max-width: 320px)",
+  md: "(max-width: 870px)",
+  lg: "(max-width: 1440px)",
+}
+
 const IndexPage = () => {
+  const matchPoints = useBreakpoint(queries)
   const [openedGallery, setOpenedGallery] = useState(null)
   const closeGallery = () => setOpenedGallery(null)
   const [playingVideo, setPlayingVideo] = useState("")
@@ -127,17 +135,19 @@ const IndexPage = () => {
               <CTA_BIO />
             </div>
           </div>
-          <div className={styles.spotify}>
-            <iframe
-              title="SpotifyIframe"
-              src="https://open.spotify.com/embed/playlist/0Mv0b9aQLuyEUU5oSKzsrF"
-              width="300"
-              height="380"
-              frameBorder="0"
-              allowtransparency="true"
-              allow="encrypted-media"
-            ></iframe>
-          </div>
+          {matchPoints && !matchPoints.md && (
+            <div className={styles.spotify}>
+              <iframe
+                title="SpotifyIframe"
+                src="https://open.spotify.com/embed/playlist/0Mv0b9aQLuyEUU5oSKzsrF"
+                width="300"
+                height="380"
+                frameBorder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </div>
+          )}
         </div>
         <div className={styles.nypdContainer}>
           <div className={styles.nypd}>
@@ -321,7 +331,8 @@ const IndexPage = () => {
       {openedGallery === "burger" && <BurgerGallery close={closeGallery} />}
 
       {playingVideo === "speedy" && (
-        <div className={styles.videoOverlay} onClick={clearPlayingVideo}>
+        <div className={styles.videoOverlay}>
+          <span onClick={clearPlayingVideo}>&times;</span>
           <iframe
             src="https://player.vimeo.com/video/185378818?autoplay=1&title=0&byline=0&portrait=0"
             width="1200"
@@ -334,7 +345,8 @@ const IndexPage = () => {
       )}
 
       {playingVideo === "cheetos" && (
-        <div className={styles.videoOverlay} onClick={clearPlayingVideo}>
+        <div className={styles.videoOverlay}>
+          <span onClick={clearPlayingVideo}>&times;</span>
           <iframe
             src="https://player.vimeo.com/video/259506177?autoplay=1&title=0&byline=0&portrait=0"
             width="1200"
@@ -347,7 +359,8 @@ const IndexPage = () => {
       )}
 
       {playingVideo === "adidas" && (
-        <div className={styles.videoOverlay} onClick={clearPlayingVideo}>
+        <div className={styles.videoOverlay}>
+          <span onClick={clearPlayingVideo}>&times;</span>
           <iframe
             src="https://player.vimeo.com/video/268828753?autoplay=1&title=0&byline=0&portrait=0"
             width="1200"
@@ -360,7 +373,8 @@ const IndexPage = () => {
       )}
 
       {playingVideo === "uber" && (
-        <div className={styles.videoOverlay} onClick={clearPlayingVideo}>
+        <div className={styles.videoOverlay}>
+          <span onClick={clearPlayingVideo}>&times;</span>
           <iframe
             src="https://player.vimeo.com/video/363331676?autoplay=1&title=0&byline=0&portrait=0"
             width="1200"
@@ -373,7 +387,8 @@ const IndexPage = () => {
       )}
 
       {playingVideo === "unicef" && (
-        <div className={styles.videoOverlay} onClick={clearPlayingVideo}>
+        <div className={styles.videoOverlay}>
+          <span onClick={clearPlayingVideo}>&times;</span>
           <iframe
             src="https://player.vimeo.com/video/330861127?autoplay=1&title=0&byline=0&portrait=0"
             width="1200"
