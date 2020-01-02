@@ -50,6 +50,8 @@ import PalomitasStill3 from "../components/images/palomitasStill3"
 import BackToTop from "../components/images/backToTop"
 import Firulete9 from "../components/images/firulete9"
 import Firulete10 from "../components/images/firulete10"
+
+import CTA_Spotify from "../components/images/CTA/spotify"
 import CTA_BIO from "../components/images/CTA/bio"
 import CTA_Chino from "../components/images/CTA/chino"
 import CTA_Rocklets from "../components/images/CTA/rocklets"
@@ -156,17 +158,22 @@ const IndexPage = () => {
             </div>
           </div>
           {matchPoints && !matchPoints.md && (
-            <div className={styles.spotify}>
-              <iframe
-                title="SpotifyIframe"
-                src="https://open.spotify.com/embed/playlist/0Mv0b9aQLuyEUU5oSKzsrF"
-                width="300"
-                height="380"
-                frameBorder="0"
-                allowtransparency="true"
-                allow="encrypted-media"
-              ></iframe>
-            </div>
+            <>
+              <div className={styles.spotify}>
+                <iframe
+                  title="SpotifyIframe"
+                  src="https://open.spotify.com/embed/playlist/0Mv0b9aQLuyEUU5oSKzsrF"
+                  width="300"
+                  height="380"
+                  frameBorder="0"
+                  allowtransparency="true"
+                  allow="encrypted-media"
+                ></iframe>
+              </div>
+              <div className={`${styles.CTA_spotify} ${styles.cta}`}>
+                <CTA_Spotify />
+              </div>
+            </>
           )}
         </div>
         <div className={styles.nypdContainer}>

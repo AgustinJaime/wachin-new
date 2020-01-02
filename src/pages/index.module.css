@@ -55,6 +55,10 @@
   transform: translate(-3rem, 5rem);
 }
 
+.spotify:hover+.cta {
+  opacity: 1;
+}
+
 .nypdContainer {
   display: flex;
   align-items: center;
@@ -475,6 +479,13 @@
 .cta {
   opacity: 0;
   transition: opacity 100ms;
+}
+
+.CTA_spotify {
+  position: absolute;
+  right: 0;
+  transform: translate(-8rem, -2rem);
+  width: 13rem;
 }
 
 .CTA_bio {
