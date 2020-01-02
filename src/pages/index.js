@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import useBreakpoint from "../helpers/useBreakpointHook"
+import { useScrollPosition } from "../helpers/useScrollPositionHook"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -85,6 +86,25 @@ const IndexPage = () => {
   const closeGallery = () => setOpenedGallery(null)
   const [playingVideo, setPlayingVideo] = useState("")
   const clearPlayingVideo = () => setPlayingVideo("")
+  const [backToTopStyles, setBackToTopStyles] = useState({})
+  const scrollToTop = () => window.scrollTo(0, 0)
+
+  useScrollPosition(
+    ({ prevPos, currPos }) => {
+      const isVisible = currPos.y < -400
+      const shouldBeStyle = {
+        transform: isVisible ? "translateX(0)" : "translateX(300px)",
+        transition: isVisible
+          ? "transform 200ms ease-out"
+          : "transform 200ms ease-in",
+      }
+      if (JSON.stringify(shouldBeStyle) === JSON.stringify(backToTopStyles)) {
+        return
+      }
+      setBackToTopStyles(shouldBeStyle)
+    },
+    [backToTopStyles]
+  )
 
   return (
     <>
@@ -310,9 +330,6 @@ const IndexPage = () => {
         <div className={styles.firulete9}>
           <Firulete9 />
         </div>
-        <div className={styles.backToTop}>
-          <BackToTop />
-        </div>
         <div className={styles.firulete10}>
           <Firulete10 />
         </div>
@@ -320,6 +337,14 @@ const IndexPage = () => {
           <p>Hecho desde México con amor - 2019</p>
         </footer>
       </Layout>
+
+      <div
+        className={styles.backToTop}
+        style={{ ...backToTopStyles }}
+        onClick={scrollToTop}
+      >
+        <BackToTop />
+      </div>
 
       {openedGallery === "cheetos" && <CheetosGallery close={closeGallery} />}
       {openedGallery === "bimbo" && <BimboGallery close={closeGallery} />}

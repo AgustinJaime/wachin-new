@@ -421,11 +421,14 @@
 }
 
 .backToTop {
-  position: absolute;
+  position: fixed;
   width: 10rem;
-  right: 0;
-  transform: translate(-1rem, 117rem);
+  right: 0.5rem;
+  bottom: 0.5rem;
   z-index: 1;
+  transform: translateX(300px);
+  transition: transform 200ms ease-in;
+  cursor: pointer;
 }
 
 .firulete10 {
