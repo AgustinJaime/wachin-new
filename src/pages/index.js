@@ -363,12 +363,12 @@ const IndexPage = () => {
       {openedGallery === "burger" && <BurgerGallery close={closeGallery} />}
 
       {playingVideo === "speedy" && (
-        <div className={styles.videoOverlay}>
+        <div className={styles.videoOverlay} onClick={clearPlayingVideo}>
           <span onClick={clearPlayingVideo}>&times;</span>
           <iframe
             src="https://player.vimeo.com/video/185378818?autoplay=1&title=0&byline=0&portrait=0"
             width="1200"
-            height="675"
+            height={matchPoints && matchPoints.md ? 400 : 675}
             frameBorder="0"
             allow="autoplay; fullscreen"
             allowFullScreen
@@ -377,12 +377,12 @@ const IndexPage = () => {
       )}
 
       {playingVideo === "cheetos" && (
-        <div className={styles.videoOverlay}>
+        <div className={styles.videoOverlay} onClick={clearPlayingVideo}>
           <span onClick={clearPlayingVideo}>&times;</span>
           <iframe
             src="https://player.vimeo.com/video/259506177?autoplay=1&title=0&byline=0&portrait=0"
             width="1200"
-            height="675"
+            height={matchPoints && matchPoints.md ? 400 : 675}
             frameBorder="0"
             allow="autoplay; fullscreen"
             allowFullScreen
@@ -391,12 +391,12 @@ const IndexPage = () => {
       )}
 
       {playingVideo === "adidas" && (
-        <div className={styles.videoOverlay}>
+        <div className={styles.videoOverlay} onClick={clearPlayingVideo}>
           <span onClick={clearPlayingVideo}>&times;</span>
           <iframe
             src="https://player.vimeo.com/video/268828753?autoplay=1&title=0&byline=0&portrait=0"
             width="1200"
-            height="675"
+            height={matchPoints && matchPoints.md ? 300 : 675}
             frameBorder="0"
             allow="autoplay; fullscreen"
             allowFullScreen
@@ -405,12 +405,12 @@ const IndexPage = () => {
       )}
 
       {playingVideo === "uber" && (
-        <div className={styles.videoOverlay}>
+        <div className={styles.videoOverlay} onClick={clearPlayingVideo}>
           <span onClick={clearPlayingVideo}>&times;</span>
           <iframe
             src="https://player.vimeo.com/video/363331676?autoplay=1&title=0&byline=0&portrait=0"
             width="1200"
-            height="675"
+            height={matchPoints && matchPoints.md ? 300 : 675}
             frameBorder="0"
             allow="autoplay; fullscreen"
             allowFullScreen
@@ -419,12 +419,12 @@ const IndexPage = () => {
       )}
 
       {playingVideo === "unicef" && (
-        <div className={styles.videoOverlay}>
+        <div className={styles.videoOverlay} onClick={clearPlayingVideo}>
           <span onClick={clearPlayingVideo}>&times;</span>
           <iframe
             src="https://player.vimeo.com/video/330861127?autoplay=1&title=0&byline=0&portrait=0"
             width="1200"
-            height="675"
+            height={matchPoints && matchPoints.md ? 300 : 675}
             frameBorder="0"
             allow="autoplay; fullscreen"
             allowFullScreen

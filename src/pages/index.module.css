@@ -594,4 +594,8 @@
   .cta {
     opacity: 1
   }
+
+  .videoOverlay>span {
+    font-size: 8rem;
+  }
 }
