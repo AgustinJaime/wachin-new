@@ -590,4 +590,8 @@
   .textAndSpotifyContainer {
     min-height: 27rem;
   }
+
+  .cta {
+    opacity: 1
+  }
 }
