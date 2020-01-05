@@ -598,7 +598,19 @@
 
 @media only screen and (max-width: 870px) {
   .textAndSpotifyContainer {
+    margin-top: 13rem;
     min-height: 27rem;
+    justify-content: center;
+  }
+
+  .textContainer {
+    position: static;
+  }
+
+  .CTA_bio {
+    transform: translate(2rem, -23rem);
+    width: 44rem;
+
   }
 
   .cta {

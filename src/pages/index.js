@@ -85,7 +85,10 @@ const queries = {
 const IndexPage = () => {
   const matchPoints = useBreakpoint(queries)
   const [openedGallery, setOpenedGallery] = useState(null)
-  const closeGallery = () => setOpenedGallery(null)
+  const closeGallery = () => {
+    setOpenedGallery(null)
+    window.scrollTo(0, window.scrollY)
+  }
   const [playingVideo, setPlayingVideo] = useState("")
   const clearPlayingVideo = () => setPlayingVideo("")
   const [backToTopStyles, setBackToTopStyles] = useState({})
