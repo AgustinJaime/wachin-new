@@ -180,14 +180,16 @@ const IndexPage = () => {
           <div className={styles.nypd}>
             <NYPD />
           </div>
-          <div
-            className={styles.hardCandy}
-            onClick={() => setOpenedGallery("rocklets")}
-          >
-            <HardCandy />
-          </div>
-          <div className={`${styles.CTA_rocklets} ${styles.cta}`}>
-            <CTA_Rocklets />
+          <div className={styles.rockletsContainer}>
+            <div
+              className={styles.hardCandy}
+              onClick={() => setOpenedGallery("rocklets")}
+            >
+              <HardCandy />
+            </div>
+            <div className={`${styles.CTA_rocklets} ${styles.cta}`}>
+              <CTA_Rocklets />
+            </div>
           </div>
         </div>
         <div className={styles.firulete2}>
@@ -252,20 +254,24 @@ const IndexPage = () => {
         <div className={styles.firulete4}>
           <Firulete4 />
         </div>
-        <div
-          className={styles.adidas}
-          onClick={() => setPlayingVideo("adidas")}
-        >
-          <img src={Adidas}></img>
+        <div className={styles.adidasContainer}>
+          <div
+            className={styles.adidas}
+            onClick={() => setPlayingVideo("adidas")}
+          >
+            <img src={Adidas}></img>
+          </div>
+          <div className={`${styles.CTA_adidas} ${styles.cta}`}>
+            <CTA_Adidas />
+          </div>
         </div>
-        <div className={`${styles.CTA_adidas} ${styles.cta}`}>
-          <CTA_Adidas />
-        </div>
-        <div className={styles.cata}>
-          <Cata />
-        </div>
-        <div className={`${styles.CTA_cata} ${styles.cta}`}>
-          <CTA_Cata />
+        <div className={styles.cataContainer}>
+          <div className={styles.cata}>
+            <Cata />
+          </div>
+          <div className={`${styles.CTA_cata} ${styles.cta}`}>
+            <CTA_Cata />
+          </div>
         </div>
         <div
           className={styles.bimboGallery}
@@ -285,11 +291,13 @@ const IndexPage = () => {
         <div className={styles.firulete6}>
           <Firulete6 />
         </div>
-        <div className={styles.army}>
-          <Army />
-        </div>
-        <div className={`${styles.CTA_army} ${styles.cta}`}>
-          <CTA_Army />
+        <div className={styles.armyContainer}>
+          <div className={styles.army}>
+            <Army />
+          </div>
+          <div className={`${styles.CTA_army} ${styles.cta}`}>
+            <CTA_Army />
+          </div>
         </div>
         <div className={styles.firulete7}>
           <Firulete7 />

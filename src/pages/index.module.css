@@ -23,10 +23,10 @@
 }
 
 .textAndSpotifyContainer {
-  position: relative;
   display: flex;
   justify-content: flex-end;
   margin-top: 8rem;
+  height: 26rem;
 }
 
 .textContainer {
@@ -50,9 +50,9 @@
 }
 
 .spotify {
-  margin-bottom: 5rem;
-  width: 18.75rem;
-  transform: translate(-3rem, 5rem);
+  position: absolute;
+  right: 0;
+  transform: translate(-10rem, 5rem);
 }
 
 .spotify:hover+.cta {
@@ -60,22 +60,22 @@
 }
 
 .nypdContainer {
-  display: flex;
-  align-items: center;
   margin-top: -1.25rem;
+  height: 30rem;
 }
 
 .nypd {
-  margin-left: -3.125rem;
+  position: absolute;
+  transform: translateX(-3.125rem);
   width: 56rem;
 }
 
-.hardCandy {
-  margin-left: -4rem;
+.rockletsContainer {
+  position: absolute;
+  right: 0;
   width: 23rem;
-  position: relative;
-  top: 4.0625rem;
   cursor: pointer;
+  transform: translate(-4rem, 12rem);
 }
 
 .hardCandy:hover+.cta {
@@ -188,7 +188,7 @@
   transform: translate(-0.25rem, -13rem);
 }
 
-.adidas {
+.adidasContainer {
   position: absolute;
   left: 0;
   width: 30rem;
@@ -196,6 +196,11 @@
   cursor: pointer;
 }
 
+.adidas {
+  position: absolute;
+}
+
+.adidas,
 .adidas img {
   width: 100%;
 }
@@ -204,12 +209,17 @@
   opacity: 1;
 }
 
-.cata {
+.cataContainer {
   position: absolute;
   right: 0;
   width: 24.375rem;
   transform: translate(-6.5rem, 13rem);
   z-index: 2;
+}
+
+.cata {
+  position: relative;
+  z-index: 1;
 }
 
 .cata:hover+.cta {
@@ -238,7 +248,7 @@
   transform: translate(0px, 52rem);
 }
 
-.army {
+.armyContainer {
   position: absolute;
   left: 0;
   width: 35.75rem;
@@ -484,15 +494,15 @@
 .CTA_spotify {
   position: absolute;
   right: 0;
-  transform: translate(-8rem, -2rem);
+  transform: translate(-12rem, -2rem);
   width: 13rem;
 }
 
 .CTA_bio {
   position: absolute;
-  top: -4rem;
-  left: 3rem;
+  transform: translate(5.5rem, -22rem);
   width: 41rem;
+  opacity: 1;
 }
 
 .CTA_chino {
@@ -504,9 +514,8 @@
 
 .CTA_rocklets {
   opacity: 1;
-  position: absolute;
   width: 24rem;
-  transform: translate(45.5rem, 5.5rem);
+  transform: translate(-3.5rem, -13rem);
   pointer-events: none;
 }
 
@@ -534,21 +543,22 @@
 .CTA_adidas {
   position: absolute;
   width: 15rem;
-  transform: translate(11rem, 12rem);
+  transform: translate(-8rem, 2rem);
   pointer-events: none;
 }
 
 .CTA_cata {
   position: absolute;
-  width: 8rem;
-  transform: translate(50rem, 12rem);
+  width: 7.7rem;
+  transform: translate(5rem, -0.7rem);
   pointer-events: none;
+  top: 0;
 }
 
 .CTA_army {
   position: absolute;
   width: 28rem;
-  transform: translate(1rem, 55rem);
+  transform: translate(4rem, -15rem);
   pointer-events: none;
 }
 
