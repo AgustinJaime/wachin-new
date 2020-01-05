@@ -15,11 +15,29 @@
   opacity: 1;
 }
 
-.contact {
+.contactContainer {
   position: absolute;
   top: 1rem;
   right: 2.5rem;
   width: 18.75rem;
+  z-index: 1;
+}
+
+.contact {
+  cursor: pointer;
+}
+
+.contact:hover+.contactPopup {
+  opacity: 1;
+}
+
+.contactPopup {
+  opacity: 0;
+  width: 31rem;
+  top: 0;
+  transform: translate(-16rem, -10rem);
+  pointer-events: none;
+  transition: opacity 200ms;
 }
 
 .textAndSpotifyContainer {

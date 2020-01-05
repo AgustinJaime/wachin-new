@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import Firulete1 from "../components/images/firulete1"
 import LogoWachin from "../components/images/logo-wachin"
 import Contact from "../components/images/contact"
+import ContactPopup from "../components/images/contact_popup"
 import NYPD from "../components/images/nypd"
 import HardCandy from "../components/images/hard-candy"
 import Firulete2 from "../components/images/firulete2"
@@ -128,8 +129,13 @@ const IndexPage = () => {
             </div>
           </div>
         </h1>
-        <div className={styles.contact}>
-          <Contact />
+        <div className={styles.contactContainer}>
+          <div className={styles.contact}>
+            <Contact />
+          </div>
+          <div className={styles.contactPopup}>
+            <ContactPopup />
+          </div>
         </div>
 
         <div className={styles.textAndSpotifyContainer}>
