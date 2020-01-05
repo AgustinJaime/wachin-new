@@ -64,6 +64,8 @@ import CTA_Army from "../components/images/CTA/army"
 import CTA_Unicef from "../components/images/CTA/unicef"
 import CTA_Clinique from "../components/images/CTA/clinique"
 import CTA_Palomitas from "../components/images/CTA/palomitas"
+import CTA_Cheetos from "../components/images/CTA/cheetos"
+import CTA_Bimbo from "../components/images/CTA/bimbo"
 
 import CheetosGallery from "../components/CheetosGallery"
 import BimboGallery from "../components/BimboGallery"
@@ -233,23 +235,28 @@ const IndexPage = () => {
         <div className={`${styles.CTA_burger} ${styles.cta}`}>
           <CTA_Burger />
         </div>
-        <div
-          className={styles.cheetosGallery}
-          onClick={() => setOpenedGallery("cheetos")}
-        >
-          <CheetosStill1 className={styles.cheetos1} />
-          <CheetosStill2 className={styles.cheetos2} />
-          <CheetosStill3 className={styles.cheetos3} />
-          <CheetosStill4 className={styles.cheetos4} />
-        </div>
-        <div className={styles.cheetos}>
-          <img src={Cheetos2}></img>
-        </div>
-        <div
-          className={styles.cheetosVideo}
-          onClick={() => setPlayingVideo("cheetos")}
-        >
-          <img src={Cheetos1}></img>
+        <div className={styles.cheetosContainer}>
+          <div
+            className={styles.cheetosGallery}
+            onClick={() => setOpenedGallery("cheetos")}
+          >
+            <CheetosStill1 className={styles.cheetos1} />
+            <CheetosStill2 className={styles.cheetos2} />
+            <CheetosStill3 className={styles.cheetos3} />
+            <CheetosStill4 className={styles.cheetos4} />
+          </div>
+          <div className={styles.cheetos}>
+            <img src={Cheetos2}></img>
+          </div>
+          <div
+            className={styles.cheetosVideo}
+            onClick={() => setPlayingVideo("cheetos")}
+          >
+            <img src={Cheetos1}></img>
+          </div>
+          <div className={`${styles.CTA_cheetos} ${styles.cta}`}>
+            <CTA_Cheetos />
+          </div>
         </div>
         <div className={styles.firulete3}>
           <Firulete3 />
@@ -276,14 +283,19 @@ const IndexPage = () => {
             <CTA_Cata />
           </div>
         </div>
-        <div
-          className={styles.bimboGallery}
-          onClick={() => setOpenedGallery("bimbo")}
-        >
-          <BimboStill1 className={styles.bimbo1} />
-          <BimboStill2 className={styles.bimbo2} />
-          <BimboStill3 className={styles.bimbo3} />
-          <BimboStill4 className={styles.bimbo4} />
+        <div className={styles.bimboContainer}>
+          <div
+            className={styles.bimboGallery}
+            onClick={() => setOpenedGallery("bimbo")}
+          >
+            <BimboStill1 className={styles.bimbo1} />
+            <BimboStill2 className={styles.bimbo2} />
+            <BimboStill3 className={styles.bimbo3} />
+            <BimboStill4 className={styles.bimbo4} />
+          </div>
+          <div className={`${styles.CTA_bimbo} ${styles.cta}`}>
+            <CTA_Bimbo />
+          </div>
         </div>
         <div className={styles.firulete5}>
           <Firulete5 />
