@@ -75,6 +75,7 @@ import CliniqueGallery from "../components/CliniqueGallery"
 import PalomitasGallery from "../components/PalomitasGallery"
 import BurgerGallery from "../components/BurgerGallery"
 
+import InstagramFeed from "../components/instagramFeed"
 import "react-image-lightbox/style.css"
 import "./styles.css"
 import styles from "./index.module.css"
@@ -237,6 +238,9 @@ const IndexPage = () => {
           >
             <img src={Burger}></img>
           </div>
+        </div>
+        <div className={styles.instagram}>
+          <InstagramFeed url="https://www.instagram.com/wachin.tv/" />
         </div>
         <div className={`${styles.CTA_burger} ${styles.cta}`}>
           <CTA_Burger />

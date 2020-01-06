@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 
-.contact:hover + .contactPopup {
+.contact:hover+.contactPopup {
   opacity: 1;
 }
 
@@ -73,7 +73,7 @@
   transform: translate(-10rem, 5rem);
 }
 
-.spotify:hover + .cta {
+.spotify:hover+.cta {
   opacity: 1;
 }
 
@@ -96,8 +96,14 @@
   transform: translate(-4rem, 12rem);
 }
 
-.hardCandy:hover + .cta {
+.hardCandy:hover+.cta {
   opacity: 0;
+}
+
+.instagram {
+  position: absolute;
+  transform: translate(21rem, -66rem);
+  z-index: 0;
 }
 
 .firulete2 {
@@ -127,8 +133,8 @@
   width: 100%;
 }
 
-.uber:hover ~ .CTA_videos,
-.speedy:hover ~ .CTA_videos {
+.uber:hover~.CTA_videos,
+.speedy:hover~.CTA_videos {
   opacity: 1;
 }
 
@@ -137,7 +143,7 @@
   transform: translate(34rem, -12.25rem);
 }
 
-.chica1:hover + .cta {
+.chica1:hover+.cta {
   opacity: 1;
 }
 
@@ -167,7 +173,7 @@
   width: 100%;
 }
 
-.burgerContainer:hover + .cta {
+.burgerContainer:hover+.cta {
   opacity: 1;
 }
 
@@ -178,9 +184,9 @@
   transform: translate(21rem, -3rem);
 }
 
-.cheetos:hover ~ .cta,
-.cheetosVideo:hover ~ .cta,
-.cheetosGallery:hover ~ .cta {
+.cheetos:hover~.cta,
+.cheetosVideo:hover~.cta,
+.cheetosGallery:hover~.cta {
   opacity: 1;
 }
 
@@ -231,7 +237,7 @@
   width: 100%;
 }
 
-.adidas:hover + .cta {
+.adidas:hover+.cta {
   opacity: 1;
 }
 
@@ -248,7 +254,7 @@
   z-index: 1;
 }
 
-.cata:hover + .cta {
+.cata:hover+.cta {
   opacity: 1;
 }
 
@@ -281,7 +287,7 @@
   transform: translate(0.625rem, 56.25rem);
 }
 
-.army:hover + .cta {
+.army:hover+.cta {
   opacity: 1;
 }
 
@@ -303,7 +309,7 @@
   width: 100%;
 }
 
-.unicef:hover + .cta {
+.unicef:hover+.cta {
   opacity: 1;
 }
 
@@ -369,7 +375,7 @@
   cursor: pointer;
 }
 
-.bimboGallery:hover + .cta {
+.bimboGallery:hover+.cta {
   opacity: 1;
 }
 
@@ -401,7 +407,7 @@
   cursor: pointer;
 }
 
-.cliniqueGallery:hover + .cta {
+.cliniqueGallery:hover+.cta {
   opacity: 1;
 }
 
@@ -444,7 +450,7 @@
   cursor: pointer;
 }
 
-.palomitasGallery:hover + .cta {
+.palomitasGallery:hover+.cta {
   opacity: 1;
 }
 
@@ -501,7 +507,7 @@
   z-index: 20;
 }
 
-.videoOverlay > span {
+.videoOverlay>span {
   font-size: 2rem;
   color: #cccccc;
   position: absolute;
@@ -557,7 +563,9 @@
 .CTA_videos {
   position: absolute;
   width: 24rem;
-  transform: translate(7rem, -28rem);
+  transform: translate(10rem, -28rem);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .CTA_rubia {
@@ -665,7 +673,7 @@
     opacity: 1;
   }
 
-  .videoOverlay > span {
+  .videoOverlay>span {
     font-size: 8rem;
   }
 }

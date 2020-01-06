@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  max-width: 10rem;
+  grid-template-columns: 4rem 6rem
+}
+
+.container picture {
+  width: 4rem
+}
+
+.container picture img {
+  width: 100%
+}
+
+.firstCol,
+.secondCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstCol {
+  margin-right: 0.35rem;
+}
+
+.hero {
+  width: 8.3rem
+}
+
+.belowHero {
+  display: flex;
+}
+
+.belowHero picture:first-child {
+  margin-right: 0.35rem;
+}
