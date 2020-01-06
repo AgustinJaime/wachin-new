@@ -7,6 +7,7 @@ const instagramRegExp = new RegExp(
 export const fetchInstagramPhotos = async accountUrl => {
   const response = await axios.get(accountUrl)
   const json = JSON.parse(response.data.match(instagramRegExp)[1])
+  const profilePic = json.entry_data.ProfilePage[0].graphql.user.profile_pic_url
   const edges = json.entry_data.ProfilePage[0].graphql.user.edge_owner_to_timeline_media.edges.splice(
     0,
     8
@@ -22,5 +23,5 @@ export const fetchInstagramPhotos = async accountUrl => {
         : "",
     }
   })
-  return photos
+  return { profilePic, photos }
 }
