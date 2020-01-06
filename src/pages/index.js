@@ -8,6 +8,7 @@ import Firulete1 from "../components/images/firulete1"
 import LogoWachin from "../components/images/logo-wachin"
 import Contact from "../components/images/contact"
 import ContactPopup from "../components/images/contact_popup"
+import Bio from "../components/images/bio"
 import NYPD from "../components/images/nypd"
 import HardCandy from "../components/images/hard-candy"
 import Firulete2 from "../components/images/firulete2"
@@ -141,30 +142,9 @@ const IndexPage = () => {
 
         <div className={styles.textAndSpotifyContainer}>
           <div className={styles.textContainer}>
-            <p className={styles.paragraph}>
-              Wachín es el alter ego de
-              <br />
-              <strong>Martín Pimentel + Bruno Bengen</strong>
-              <br />
-              <br />
-              Siempre divertido, nunca indivertido.
-              <br />
-              Esta dupla argentina combina una narrativa innovadora
-              <br />
-              con un toque fresco y sexy. Buscando crear impacto, encaran
-              <br />
-              todos los proyectos con una tendencia por la innovación
-              <br />
-              en el discurso y la técnica. Combinan distintas disciplinas,
-              <br />
-              cómo la foto, el video y la animación aplicándolo a contenidos
-              <br />
-              tradicionales y no tradicionales, aspirando siempre a la mejor
-              <br />
-              calidad. Su trabajo se caracteriza por hacer de cada proyecto
-              <br />
-              una historia única. Desde México para todo el mundo.
-            </p>
+            <div className={styles.paragraph}>
+              <Bio />
+            </div>
             <div className={`${styles.CTA_bio} ${styles.cta}`}>
               <CTA_BIO />
             </div>

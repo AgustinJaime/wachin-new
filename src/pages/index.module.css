@@ -58,13 +58,8 @@
 }
 
 .paragraph {
-  width: 70%;
-  text-align: center;
-  color: #221de0;
-  font-size: 1.1rem;
-  line-height: 1.4;
-  margin-left: 6rem;
-  font-family: "Claire Hand";
+  width: 32rem;
+  transform: translate(9.5rem, -1rem);
 }
 
 .spotify {
@@ -654,6 +649,11 @@
 }
 
 @media only screen and (max-width: 870px) {
+  .paragraph {
+    width: 34rem;
+    transform: translate(7rem, -1rem);
+  }
+
   .textAndSpotifyContainer {
     margin-top: 13rem;
     min-height: 27rem;
