@@ -78,6 +78,7 @@ import BurgerGallery from "../components/BurgerGallery"
 
 import InstagramFeed from "../components/instagramFeed"
 import "react-image-lightbox/style.css"
+import "../fonts/fonts.css"
 import "./styles.css"
 import styles from "./index.module.css"
 

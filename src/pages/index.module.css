@@ -32,10 +32,11 @@
 }
 
 .contactPopup {
+  position: absolute;
   opacity: 0;
   width: 31rem;
   top: 0;
-  transform: translate(-16rem, -10rem);
+  transform: translate(-16rem, 1rem);
   pointer-events: none;
   transition: opacity 200ms;
 }
@@ -45,6 +46,7 @@
   justify-content: flex-end;
   margin-top: 8rem;
   height: 26rem;
+  z-index: 10;
 }
 
 .textContainer {
@@ -526,6 +528,7 @@
 .cta {
   opacity: 0;
   transition: opacity 100ms;
+  pointer-events: none;
 }
 
 .CTA_spotify {
@@ -552,7 +555,6 @@
   opacity: 1;
   width: 24rem;
   transform: translate(-3.5rem, -13rem);
-  pointer-events: none;
 }
 
 .CTA_videos {
@@ -560,14 +562,12 @@
   width: 24rem;
   transform: translate(10rem, -28rem);
   z-index: 1;
-  pointer-events: none;
 }
 
 .CTA_rubia {
   position: absolute;
   width: 38rem;
   transform: translate(36rem, -44rem);
-  pointer-events: none;
   z-index: 1;
 }
 
@@ -575,21 +575,18 @@
   position: absolute;
   width: 15rem;
   transform: translate(-2rem, -36rem);
-  pointer-events: none;
 }
 
 .CTA_adidas {
   position: absolute;
   width: 15rem;
   transform: translate(-8rem, 2rem);
-  pointer-events: none;
 }
 
 .CTA_cata {
   position: absolute;
   width: 7.7rem;
   transform: translate(5rem, -0.7rem);
-  pointer-events: none;
   top: 0;
 }
 
@@ -597,28 +594,24 @@
   position: absolute;
   width: 28rem;
   transform: translate(4rem, -15rem);
-  pointer-events: none;
 }
 
 .CTA_unicef {
   position: absolute;
   width: 23rem;
   transform: translate(35rem, 67rem);
-  pointer-events: none;
 }
 
 .CTA_clinique {
   position: absolute;
   width: 23rem;
   transform: translate(1rem, 82rem);
-  pointer-events: none;
 }
 
 .CTA_palomitas {
   position: absolute;
   width: 33rem;
   transform: translate(32rem, 88rem);
-  pointer-events: none;
   z-index: 10;
 }
 
