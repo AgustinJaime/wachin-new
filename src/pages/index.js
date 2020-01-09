@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import Helmet from "react-helmet"
 import useBreakpoint from "../helpers/useBreakpointHook"
 import { useScrollPosition } from "../helpers/useScrollPositionHook"
 
@@ -118,7 +119,33 @@ const IndexPage = () => {
   return (
     <>
       <Layout noscroll={!!playingVideo || !!openedGallery}>
-        <SEO title="Home" />
+        <SEO title="wachin.tv" />
+        <Helmet>
+          <title>wachin.tv</title>
+          <meta name="title" content="wachin.tv" />
+          <meta name="description" content="Hecho desde México con amor." />
+
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://wachin.tv/" />
+          <meta property="og:title" content="wachin.tv" />
+          <meta
+            property="og:description"
+            content="Hecho desde México con amor."
+          />
+          <meta property="og:image" content={`https://wachin.tv/favicon.png`} />
+
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://wachin.tv/" />
+          <meta property="twitter:title" content="wachin.tv" />
+          <meta
+            property="twitter:description"
+            content="Hecho desde México con amor."
+          />
+          <meta
+            property="twitter:image"
+            content={`https://wachin.tv/favicon.png`}
+          />
+        </Helmet>
         <div className={styles.firulete1}>
           <Firulete1 />
         </div>

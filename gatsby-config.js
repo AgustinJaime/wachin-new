@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Wachin`,
-    description: ``,
+    title: `wachin.tv`,
+    description: `Hecho desde México con amor.`,
     author: `@garzito`,
   },
   plugins: [
