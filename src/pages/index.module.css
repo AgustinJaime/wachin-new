@@ -27,7 +27,9 @@
   cursor: pointer;
 }
 
-.contact:hover+.contactPopup {
+.contact:hover+.contactPopup,
+.contactPopup:hover {
+  pointer-events: auto;
   opacity: 1;
 }
 
@@ -39,6 +41,21 @@
   transform: translate(-16rem, 1rem);
   pointer-events: none;
   transition: opacity 200ms;
+}
+
+.contactPopup p {
+  position: absolute;
+  top: 0;
+  transform: translate(6rem, 6rem);
+  font-size: 1.8rem;
+  font-family: "Claire Hand";
+  line-height: 1.4;
+  color: #F8CD47;
+}
+
+.contactPopup p a {
+  color: #F8CD47;
+  text-decoration: none;
 }
 
 .textAndSpotifyContainer {
@@ -60,8 +77,13 @@
 }
 
 .paragraph {
-  width: 32rem;
-  transform: translate(9.5rem, -1rem);
+  width: 70%;
+  text-align: center;
+  color: #221de0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-left: 6rem;
+  font-family: "Claire Hand";
 }
 
 .spotify {
@@ -364,7 +386,7 @@
 .bimboContainer {
   position: absolute;
   width: 13rem;
-  transform: translate(17rem, 36rem);
+  transform: translate(17rem, 51rem);
   height: 0;
 }
 
@@ -377,21 +399,16 @@
 }
 
 .bimbo1 {
-  transform: translate(8rem, -5.5rem) rotate(-7deg);
-  z-index: 2;
-}
-
-.bimbo2 {
   transform: translate(-2rem, -19rem) rotate(-12deg);
   z-index: 1;
 }
 
-.bimbo3 {
+.bimbo2 {
   transform: translate(2rem, -27rem) rotate(-9deg);
   z-index: 4;
 }
 
-.bimbo4 {
+.bimbo3 {
   transform: translate(5rem, -43.5rem) rotate(5deg);
   z-index: 3;
 }
@@ -520,7 +537,7 @@
   padding: 10px;
   color: #221de0;
   font-size: 1.2rem;
-  line-height: 1.2;
+  line-height: 1.4;
   font-family: "Claire Hand";
 }
 
@@ -626,7 +643,7 @@
   position: absolute;
   top: 0px;
   width: 10rem;
-  transform: translate(-10rem, -25rem);
+  transform: translate(-14rem, -25rem);
 }
 
 @media only screen and (max-width: 1130px) {
@@ -642,11 +659,6 @@
 }
 
 @media only screen and (max-width: 870px) {
-  .paragraph {
-    width: 34rem;
-    transform: translate(7rem, -1rem);
-  }
-
   .textAndSpotifyContainer {
     margin-top: 13rem;
     min-height: 27rem;

@@ -13,10 +13,10 @@ export const InstagramFeed = ({ url }) => {
       setProfilePic(profilePic)
     }
     getPhotos()
-  }, [])
+  }, [url])
 
   return (
-    <a href={url} target="_blank">
+    <a href={url} target="_blank" rel="noopener noreferrer">
       <div className={styles.profilePic}>
         <div>
           <img src={profilePic} alt="" />

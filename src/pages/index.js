@@ -8,7 +8,6 @@ import Firulete1 from "../components/images/firulete1"
 import LogoWachin from "../components/images/logo-wachin"
 import Contact from "../components/images/contact"
 import ContactPopup from "../components/images/contact_popup"
-import Bio from "../components/images/bio"
 import NYPD from "../components/images/nypd"
 import HardCandy from "../components/images/hard-candy"
 import Firulete2 from "../components/images/firulete2"
@@ -39,7 +38,6 @@ import CheetosStill4 from "../components/images/cheetosStill4"
 import BimboStill1 from "../components/images/bimboStill1"
 import BimboStill2 from "../components/images/bimboStill2"
 import BimboStill3 from "../components/images/bimboStill3"
-import BimboStill4 from "../components/images/bimboStill4"
 import CliniqueStill1 from "../components/images/cliniqueStill1"
 import CliniqueStill2 from "../components/images/cliniqueStill2"
 import CliniqueStill3 from "../components/images/cliniqueStill3"
@@ -93,7 +91,7 @@ const IndexPage = () => {
   const [openedGallery, setOpenedGallery] = useState(null)
   const closeGallery = () => {
     setOpenedGallery(null)
-    window.scrollTo(0, window.scrollY)
+    window.scrollTo(0, document.documentElement.scrollTop)
   }
   const [playingVideo, setPlayingVideo] = useState("")
   const clearPlayingVideo = () => setPlayingVideo("")
@@ -119,7 +117,7 @@ const IndexPage = () => {
 
   return (
     <>
-      <Layout noscroll={!!playingVideo}>
+      <Layout noscroll={!!playingVideo || !!openedGallery}>
         <SEO title="Home" />
         <div className={styles.firulete1}>
           <Firulete1 />
@@ -138,14 +136,55 @@ const IndexPage = () => {
           </div>
           <div className={styles.contactPopup}>
             <ContactPopup />
+            <p>
+              Contact:
+              <br />
+              <br />
+              Instagram:&nbsp;
+              <a
+                href="https://www.instagram.com/wachin.tv/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @wachin.tv
+              </a>
+              <br />
+              Mail: <a href="mailto:dupla@wachin.tv">dupla@wachin.tv</a>
+              <br />
+              Direccion: Cordoba 147,
+              <br />
+              Roma Norte, CDMX, Mexico.
+            </p>
           </div>
         </div>
 
         <div className={styles.textAndSpotifyContainer}>
           <div className={styles.textContainer}>
-            <div className={styles.paragraph}>
-              <Bio />
-            </div>
+            <p className={styles.paragraph}>
+              Wachín es el alter ego de
+              <br />
+              <strong>Martín Pimentel + Bruno Bengen</strong>
+              <br />
+              <br />
+              Siempre divertido, nunca indivertido.
+              <br />
+              Esta dupla argentina combina una narrativa actual
+              <br />
+              con un toque fresco y sexy. Buscando crear impacto, encaran
+              <br />
+              todos los proyectos con una tendencia por la innovación,
+              <br />
+              combinan distintas disciplinas, como la foto, el video y la
+              animación.
+              <br />
+              Aplicándolas a contenidos tradicionales y no tradicionales.
+              <br />
+              Su trabajo se caracteriza por hacer de cada proyecto
+              <br />
+              una historia única.
+              <br />
+              Desde México para todo el mundo.
+            </p>
             <div className={`${styles.CTA_bio} ${styles.cta}`}>
               <CTA_BIO />
             </div>
@@ -220,11 +259,11 @@ const IndexPage = () => {
             <img src={Burger}></img>
           </div>
         </div>
-        <div className={styles.instagram}>
-          <InstagramFeed url="https://www.instagram.com/wachin.tv/" />
-        </div>
         <div className={`${styles.CTA_burger} ${styles.cta}`}>
           <CTA_Burger />
+        </div>
+        <div className={styles.instagram}>
+          <InstagramFeed url="https://www.instagram.com/wachin.tv/" />
         </div>
         <div className={styles.cheetosContainer}>
           <div
@@ -282,7 +321,6 @@ const IndexPage = () => {
             <BimboStill1 className={styles.bimbo1} />
             <BimboStill2 className={styles.bimbo2} />
             <BimboStill3 className={styles.bimbo3} />
-            <BimboStill4 className={styles.bimbo4} />
           </div>
           <div className={`${styles.CTA_bimbo} ${styles.cta}`}>
             <CTA_Bimbo />
@@ -355,7 +393,11 @@ const IndexPage = () => {
           <Firulete10 />
         </div>
         <footer className={styles.footer}>
-          <p>Hecho desde México con amor - 2019</p>
+          <p>
+            Hecho desde México con amor.
+            <br />
+            Wachín 2020&#169;
+          </p>
         </footer>
       </Layout>
 

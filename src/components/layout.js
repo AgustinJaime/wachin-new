@@ -8,7 +8,6 @@ const Layout = ({ noscroll, children }) => (
         * {
           box-sizing: border-box;
           margin: 0;
-          user-select: none;
         }
         html,
         body {
