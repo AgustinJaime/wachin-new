@@ -1,0 +1,695 @@
+.firulete1 {
+  width: 25rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  position: relative;
+  max-width: 25rem;
+  margin: 3rem auto 10rem;
+}
+
+.logo:hover .cta {
+  opacity: 1;
+}
+
+.contactContainer {
+  position: absolute;
+  top: 1rem;
+  right: 2.5rem;
+  width: 18.75rem;
+  z-index: 1;
+}
+
+.contact {
+  cursor: pointer;
+}
+
+.contact:hover + .contactPopup,
+.contactPopup:hover {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.contactPopup {
+  position: absolute;
+  opacity: 0;
+  width: 31rem;
+  top: 0;
+  transform: translate(-16rem, 1rem);
+  pointer-events: none;
+  transition: opacity 200ms;
+}
+
+.contactPopup p {
+  position: absolute;
+  top: 0;
+  transform: translate(6rem, 6rem);
+  font-size: 1.8rem;
+  font-family: "Claire Hand";
+  line-height: 1.4;
+  color: #f8cd47;
+}
+
+.contactPopup p a {
+  color: #f8cd47;
+  text-decoration: none;
+}
+
+.textAndSpotifyContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8rem;
+  height: 26rem;
+  z-index: 10;
+}
+
+.textContainer {
+  position: absolute;
+  left: 0;
+  width: 70%;
+}
+
+.textContainer:hover .cta {
+  opacity: 1;
+}
+
+.paragraph {
+  width: 70%;
+  text-align: center;
+  color: #221de0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-left: 6rem;
+  font-family: "Claire Hand";
+}
+
+.spotify {
+  position: absolute;
+  right: 0;
+  transform: translate(-10rem, 5rem);
+}
+
+.spotify:hover + .cta {
+  opacity: 1;
+}
+
+.nypdContainer {
+  margin-top: -1.25rem;
+  height: 30rem;
+}
+
+.nypd {
+  position: absolute;
+  transform: translateX(-3.125rem);
+  width: 56rem;
+}
+
+.rockletsContainer {
+  position: absolute;
+  right: 0;
+  width: 23rem;
+  cursor: pointer;
+  transform: translate(-4rem, 12rem);
+}
+
+.hardCandy:hover + .cta {
+  opacity: 0;
+}
+
+.instagram {
+  position: absolute;
+  transform: translate(21rem, -66rem);
+  z-index: 0;
+}
+
+.firulete2 {
+  position: absolute;
+  left: 0;
+  width: 9.5rem;
+  transform: translateY(-1rem);
+}
+
+.uber {
+  width: 26rem;
+  transform: translate(36rem, 0.625rem);
+  cursor: pointer;
+}
+
+.uber img {
+  width: 100%;
+}
+
+.speedy {
+  width: 28rem;
+  transform: translate(12rem, 1.5rem);
+  cursor: pointer;
+}
+
+.speedy img {
+  width: 100%;
+}
+
+.uber:hover ~ .CTA_videos,
+.speedy:hover ~ .CTA_videos {
+  opacity: 1;
+}
+
+.chica1 {
+  width: 33.8rem;
+  transform: translate(34rem, -12.25rem);
+}
+
+.chica1:hover + .cta {
+  opacity: 1;
+}
+
+.chica2 {
+  width: 53.8rem;
+  transform: translate(14rem, -12.3rem);
+}
+
+.burgerContainer {
+  position: absolute;
+  transform: translate(12rem, -37rem);
+}
+
+.corazon {
+  width: 13rem;
+}
+
+.burger {
+  width: 13rem;
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  cursor: pointer;
+}
+
+.burger img {
+  width: 100%;
+}
+
+.burgerContainer:hover + .cta {
+  opacity: 1;
+}
+
+.cheetos {
+  position: absolute;
+  top: 0;
+  width: 19rem;
+  transform: translate(21rem, -3rem);
+}
+
+.cheetos:hover ~ .cta,
+.cheetosVideo:hover ~ .cta,
+.cheetosGallery:hover ~ .cta {
+  opacity: 1;
+}
+
+.cheetos img {
+  width: 100%;
+}
+
+.cheetosVideo {
+  position: absolute;
+  top: 0;
+  width: 29rem;
+  transform: translate(18rem, 9rem);
+  cursor: pointer;
+}
+
+.cheetosVideo img {
+  width: 100%;
+}
+
+.firulete3 {
+  position: absolute;
+  right: 0;
+  width: 8.75rem;
+  transform: translate(0px, -43rem);
+}
+
+.firulete4 {
+  position: absolute;
+  left: 0;
+  width: 19rem;
+  transform: translate(-0.25rem, -13rem);
+}
+
+.adidasContainer {
+  /* position: absolute;
+  left: 0;
+  width: 30rem;
+  transform: translate(23rem, 9rem);
+  cursor: pointer; */
+  width: 45vw;
+  height: 45vh;
+}
+
+.adidas {
+  position: absolute;
+}
+
+.adidas,
+.adidas img {
+  width: 100%;
+}
+
+.adidas:hover + .cta {
+  opacity: 1;
+}
+
+.cataContainer {
+  position: absolute;
+  right: 0;
+  width: 24.375rem;
+  transform: translate(-6.5rem, 13rem);
+  z-index: 2;
+}
+
+.cata {
+  position: relative;
+  z-index: 1;
+}
+
+.cata:hover + .cta {
+  opacity: 1;
+}
+
+.firulete5 {
+  position: absolute;
+  right: 0;
+  width: 14.0625rem;
+  transform: translate(0px, -11.5625rem);
+}
+
+.supreme {
+  position: absolute;
+  right: 0;
+  width: 28.25rem;
+  transform: translate(-5.3rem, 52rem);
+  z-index: 1;
+}
+
+.firulete6 {
+  position: absolute;
+  left: 0;
+  width: 6.375rem;
+  transform: translate(0px, 52rem);
+}
+
+.armyContainer {
+  position: absolute;
+  left: 0;
+  width: 35.75rem;
+  transform: translate(0.625rem, 56.25rem);
+}
+
+.army:hover + .cta {
+  opacity: 1;
+}
+
+.firulete7 {
+  position: absolute;
+  left: 0;
+  width: 11.625rem;
+  transform: translate(21.5625rem, 70.125rem);
+}
+
+.unicef {
+  width: 36rem;
+  position: absolute;
+  transform: translate(28.8rem, 64.5rem);
+  cursor: pointer;
+}
+
+.unicef img {
+  width: 100%;
+}
+
+.unicef:hover + .cta {
+  opacity: 1;
+}
+
+.firulete8 {
+  position: absolute;
+  right: 0;
+  width: 14.3125rem;
+  transform: translate(0, 60.0625rem);
+}
+
+.wikichin {
+  position: absolute;
+  left: 0;
+  width: 40rem;
+  transform: translate(1.5rem, 109rem);
+}
+
+.animationContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.resizeHandle {
+  width: 50px;
+  height: 50px;
+  background-color: #000000;
+}
+
+.cheetosContainer {
+  /* position: absolute;
+  width: 12rem;
+  transform: translate(18rem, -17rem);
+  height: 0; */
+  width: 50%;
+}
+
+.cheetosGallery {
+  cursor: pointer;
+}
+
+.cheetos1 {
+  transform: translate(1rem, -6.5rem) rotate(-7deg);
+  z-index: 4;
+}
+
+.cheetos2 {
+  transform: translate(0, -13rem);
+  z-index: 2;
+}
+
+.cheetos3 {
+  transform: translate(2rem, -27rem) rotate(17deg);
+  z-index: 3;
+}
+
+.cheetos4 {
+  transform: translate(4.5rem, -41rem);
+  z-index: 1;
+}
+
+.bimboContainer {
+  position: absolute;
+  width: 13rem;
+  transform: translate(17rem, 51rem);
+  height: 0;
+}
+
+.bimboGallery {
+  cursor: pointer;
+}
+
+.bimboGallery:hover + .cta {
+  opacity: 1;
+}
+
+.bimbo1 {
+  transform: translate(-2rem, -19rem) rotate(-12deg);
+  z-index: 1;
+}
+
+.bimbo2 {
+  transform: translate(2rem, -27rem) rotate(-9deg);
+  z-index: 4;
+}
+
+.bimbo3 {
+  transform: translate(5rem, -43.5rem) rotate(5deg);
+  z-index: 3;
+}
+
+.cliniqueGallery {
+  position: absolute;
+  width: 13rem;
+  transform: translate(7rem, 78rem);
+  height: 0;
+  cursor: pointer;
+}
+
+.cliniqueGallery:hover + .cta {
+  opacity: 1;
+}
+
+.clinique1 {
+  transform: rotate(8deg);
+  z-index: 6;
+}
+
+.clinique2 {
+  transform: translate(0rem, -7.5rem) rotate(6deg);
+  z-index: 5;
+}
+
+.clinique3 {
+  transform: translate(-5rem, -22.5rem) rotate(15deg);
+  z-index: 3;
+}
+
+.clinique4 {
+  transform: translate(-3rem, -37.5rem);
+  z-index: 4;
+}
+
+.clinique5 {
+  transform: translate(3.5rem, -47rem);
+  z-index: 1;
+}
+
+.clinique6 {
+  transform: translate(2rem, -56rem);
+  z-index: 2;
+}
+
+.palomitasGallery {
+  position: absolute;
+  width: 22rem;
+  transform: translate(33rem, 89rem);
+  height: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.palomitasGallery:hover + .cta {
+  opacity: 1;
+}
+
+.palomitas1 {
+  z-index: 1;
+  transform: translate(5rem, 9rem);
+}
+
+.palomitas2 {
+  z-index: 2;
+  transform: translate(0, -16rem) rotate(-5deg);
+}
+
+.palomitas3 {
+  z-index: 3;
+  transform: translate(12rem, -31rem) rotate(12deg);
+}
+
+.firulete9 {
+  position: absolute;
+  right: 0;
+  width: 15rem;
+  transform: translate(-20rem, 113rem);
+}
+
+.backToTop {
+  position: fixed;
+  width: 10rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  z-index: 1;
+  transform: translateX(300px);
+  transition: transform 200ms ease-in;
+  cursor: pointer;
+}
+
+.firulete10 {
+  position: absolute;
+  right: 0;
+  width: 13.13rem;
+  transform: translate(0, 113rem);
+}
+
+.videoOverlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 20;
+}
+
+.videoOverlay > span {
+  font-size: 2rem;
+  color: #cccccc;
+  position: absolute;
+  top: 0rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.footer {
+  transform: translate(0, 128rem);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: #221de0;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-family: "Claire Hand";
+}
+
+/* CTAs */
+.cta {
+  opacity: 0;
+  transition: opacity 100ms;
+  pointer-events: none;
+}
+
+.CTA_spotify {
+  position: absolute;
+  right: 0;
+  transform: translate(-12rem, -2rem);
+  width: 13rem;
+}
+
+.CTA_bio {
+  position: absolute;
+  transform: translate(5.5rem, -22rem);
+  width: 41rem;
+}
+
+.CTA_chino {
+  position: absolute;
+  bottom: -4rem;
+  left: 5rem;
+  width: 15rem;
+}
+
+.CTA_rocklets {
+  opacity: 1;
+  width: 24rem;
+  transform: translate(-3.5rem, -13rem);
+}
+
+.CTA_videos {
+  position: absolute;
+  width: 24rem;
+  transform: translate(10rem, -28rem);
+  z-index: 1;
+}
+
+.CTA_rubia {
+  position: absolute;
+  width: 38rem;
+  transform: translate(36rem, -44rem);
+  z-index: 1;
+}
+
+.CTA_burger {
+  position: absolute;
+  width: 15rem;
+  transform: translate(-2rem, -36rem);
+}
+
+.CTA_adidas {
+  position: absolute;
+  width: 15rem;
+  transform: translate(-8rem, 2rem);
+}
+
+.CTA_cata {
+  position: absolute;
+  width: 7.7rem;
+  transform: translate(5rem, -0.7rem);
+  top: 0;
+}
+
+.CTA_army {
+  position: absolute;
+  width: 28rem;
+  transform: translate(4rem, -15rem);
+}
+
+.CTA_unicef {
+  position: absolute;
+  width: 23rem;
+  transform: translate(35rem, 67rem);
+}
+
+.CTA_clinique {
+  position: absolute;
+  width: 23rem;
+  transform: translate(1rem, 82rem);
+}
+
+.CTA_palomitas {
+  position: absolute;
+  width: 33rem;
+  transform: translate(32rem, 88rem);
+  z-index: 10;
+}
+
+.CTA_cheetos {
+  position: absolute;
+  top: 0px;
+  width: 24rem;
+  transform: translate(-10rem, 8rem);
+}
+
+.CTA_bimbo {
+  position: absolute;
+  top: 0px;
+  width: 10rem;
+  transform: translate(-14rem, -25rem);
+}
+
+@media only screen and (max-width: 1130px) {
+  .spotify {
+    transform: translateY(0rem);
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .spotify {
+    transform: translate(-7rem, 0rem);
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .textAndSpotifyContainer {
+    margin-top: 13rem;
+    min-height: 27rem;
+    justify-content: center;
+  }
+
+  .textContainer {
+    position: static;
+  }
+
+  .CTA_bio {
+    transform: translate(2rem, -23rem);
+    width: 44rem;
+  }
+
+  .cta {
+    opacity: 1;
+  }
+
+  .videoOverlay > span {
+    font-size: 8rem;
+  }
+}

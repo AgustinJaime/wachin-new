@@ -1,0 +1,24 @@
+.navBar_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 15vh; */
+  width: 90vw;
+  z-index: 10;
+  position: fixed;
+}
+
+.navBar_link {
+  margin: 0 5px;
+  /* height: 2px;
+  width: 2px; */
+}
+/* .navBar_link_active {
+  border-top: 2px solid blue;
+} */
+.navBar_link img {
+  height: 4vh;
+  /* width: 10vw; */
+  /* object-fit: contain;
+  display: block; */
+}

@@ -1,5 +1,9 @@
 import React from "react"
 import { Global, css } from "@emotion/core"
+import LogoWachin from "./images/logo-wachin"
+import CTA_Chino from "./images/CTA/chino"
+import styles from "./index.module.css"
+import NavBar from "./navBar"
 
 const Layout = ({ noscroll, children }) => (
   <>
@@ -28,7 +32,19 @@ const Layout = ({ noscroll, children }) => (
         }
       `}
     />
-    <main>{children}</main>
+    <main>
+      <NavBar />
+      <h1>
+        {/* rename styles */}
+        <div className={styles.logo}>
+          <LogoWachin />
+          <div className={`${styles.CTA_chino} ${styles.cta}`}>
+            <CTA_Chino />
+          </div>
+        </div>
+      </h1>
+      {children}
+    </main>
   </>
 )
 

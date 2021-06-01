@@ -149,14 +149,14 @@ const IndexPage = () => {
         <div className={styles.firulete1}>
           <Firulete1 />
         </div>
-        <h1>
+        {/* <h1>
           <div className={styles.logo}>
             <LogoWachin />
             <div className={`${styles.CTA_chino} ${styles.cta}`}>
               <CTA_Chino />
             </div>
           </div>
-        </h1>
+        </h1> */}
         <div className={styles.contactContainer}>
           <div className={styles.contact}>
             <Contact />
