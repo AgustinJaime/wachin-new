@@ -16,8 +16,8 @@ const Layout = ({ noscroll, children }) => (
         html,
         body {
           margin: 0 auto;
-          max-width: 90vw;
-          width: 1400px;
+          width: 100%;
+          max-width: 1400px;
           color: #555;
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
             Helvetica, Arial, sans-serif;
@@ -30,10 +30,15 @@ const Layout = ({ noscroll, children }) => (
             margin-top: 0;
           }
         }
+        .main {
+          margin: 0 auto;
+          width: 90vw;
+          max-width: 1280px;
+        }
       `}
     />
-    <main>
-      <NavBar />
+    <NavBar />
+    <main className={"main"}>
       <h1>
         {/* rename styles */}
         <div className={styles.logo}>
