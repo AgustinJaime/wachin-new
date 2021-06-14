@@ -15,6 +15,7 @@ import CheetosStill4 from "../../components/images/cheetosStill4"
 
 import CTA_Cheetos from "../../components/images/CTA/cheetos"
 import CTA_Adidas from "../../components/images/CTA/adidas"
+import CTA_BIO from "../../components/images/CTA/bio"
 
 const queries = {
   xs: "(max-width: 320px)",
@@ -91,6 +92,10 @@ const AnimationPage = props => {
           }}
           onClick={() => setPlayingVideo("adidas")}
         >
+          {/* VERRRR */}
+          {/* <div className={`${styles.CTA_bio} ${styles.cta}`}>
+            <CTA_BIO />
+          </div> */}
           <div
           // className={styles.adidas}
           >

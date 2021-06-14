@@ -1,0 +1,32 @@
+.aboutContainer {
+  /*  */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.about {
+  width: 50%;
+  font-size: 1.6rem;
+  font-family: "Claire Hand";
+  font-weight: 300;
+  text-align: center;
+}
+.about span {
+  font-weight: bold;
+  color: #403231;
+}
+
+.footer {
+  /* transform: translate(0, 128rem); */
+  margin-top: 4rem;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: #221de0;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-family: "Claire Hand";
+}

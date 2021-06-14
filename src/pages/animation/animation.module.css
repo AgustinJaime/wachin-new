@@ -20,6 +20,9 @@
   margin: 10px;
   cursor: pointer;
 }
+.adidasContainer:hover .cta {
+  opacity: 1;
+}
 
 .videoOverlay {
   /*  */
@@ -45,8 +48,143 @@
 }
 
 /* CTAs */
+/* CTAs */
+.cta {
+  opacity: 0;
+  transition: opacity 100ms;
+  pointer-events: none;
+}
+
+.CTA_spotify {
+  position: absolute;
+  right: 0;
+  transform: translate(-12rem, -2rem);
+  width: 13rem;
+}
+
+.CTA_bio {
+  position: relative;
+  /* transform: translate(5.5rem, -22rem); */
+  /* width: 35rem; */
+}
+
+.CTA_chino {
+  position: absolute;
+  bottom: -4rem;
+  left: 5rem;
+  width: 15rem;
+}
+
+.CTA_rocklets {
+  opacity: 1;
+  width: 24rem;
+  transform: translate(-3.5rem, -13rem);
+}
+
+.CTA_videos {
+  position: absolute;
+  width: 24rem;
+  transform: translate(10rem, -28rem);
+  z-index: 1;
+}
+
+.CTA_rubia {
+  position: absolute;
+  width: 38rem;
+  transform: translate(36rem, -44rem);
+  z-index: 1;
+}
+
+.CTA_burger {
+  position: absolute;
+  width: 15rem;
+  transform: translate(-2rem, -36rem);
+}
+
+.CTA_adidas {
+  position: absolute;
+  width: 15rem;
+  transform: translate(-8rem, 2rem);
+}
+
+.CTA_cata {
+  position: absolute;
+  width: 7.7rem;
+  transform: translate(5rem, -0.7rem);
+  top: 0;
+}
+
+.CTA_army {
+  position: absolute;
+  width: 28rem;
+  transform: translate(4rem, -15rem);
+}
+
+.CTA_unicef {
+  position: absolute;
+  width: 23rem;
+  transform: translate(35rem, 67rem);
+}
+
+.CTA_clinique {
+  position: absolute;
+  width: 23rem;
+  transform: translate(1rem, 82rem);
+}
+
+.CTA_palomitas {
+  position: absolute;
+  width: 33rem;
+  transform: translate(32rem, 88rem);
+  z-index: 10;
+}
+
+.CTA_cheetos {
+  position: absolute;
+  top: 0px;
+  width: 24rem;
+  transform: translate(-10rem, 8rem);
+}
+
+.CTA_bimbo {
+  position: absolute;
+  top: 0px;
+  width: 10rem;
+  transform: translate(-14rem, -25rem);
+}
+
+@media only screen and (max-width: 1130px) {
+  .spotify {
+    transform: translateY(0rem);
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .spotify {
+    transform: translate(-7rem, 0rem);
+  }
+}
 
 @media only screen and (max-width: 870px) {
+  .textAndSpotifyContainer {
+    margin-top: 13rem;
+    min-height: 27rem;
+    justify-content: center;
+  }
+
+  .textContainer {
+    position: static;
+  }
+
+  /* .CTA_bio {
+    transform: translate(2rem, -23rem);
+    width: 44rem;
+  } */
+
+  .cta {
+    opacity: 1;
+  }
+
   .videoOverlay > span {
     font-size: 8rem;
   }

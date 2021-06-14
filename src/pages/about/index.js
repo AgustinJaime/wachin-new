@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import styles from "./animation.module.css"
+import styles from "./about.module.css"
 
 import Layout from "../../components/layout"
 import useBreakpoint from "../../helpers/useBreakpointHook"
@@ -39,94 +39,29 @@ const AnimationPage = props => {
 
   return (
     <Layout noscroll={!!playingVideo || !!openedGallery}>
-      <div className={styles.animationContainer}>
-        <div
-          className={styles.adidasContainer}
-          style={{
-            background: `url(${Cheetos2}) no-repeat center center / cover`,
-          }}
-          onClick={() => setPlayingVideo("cheetos")}
-        >
-          {/* <div
-          className={styles.cheetosGallery}
-          onClick={() => setOpenedGallery("cheetos")}
-        >
-          <CheetosStill1 className={styles.cheetos1} />
-          <CheetosStill2 className={styles.cheetos2} />
-          <CheetosStill3 className={styles.cheetos3} />
-          <CheetosStill4 className={styles.cheetos4} />
+      <div className={styles.aboutContainer}>
+        <div className={styles.about}>
+          <p>
+            <span>Wachin.tv es un hub de artistas audiovisuales</span>
+            <br />
+            interdisciplinario orientado a la publicidad donde conviven
+            animadores, editores, programadores, directores y fotógrafos bajo la
+            dirección creativa de Martín Pimentel y Bruno Bengen.
+          </p>
+          <br />
+          <p>
+            Ofrecemos contenido multimedia como: Video, animación 2d y 3d,
+            fotografía, realidad aumentada, VFXs y motion graphics
+          </p>
         </div>
-        <div className={styles.cheetos}>
-          <img src={Cheetos2}></img>
-        </div> */}
-          <div
-          // className={styles.cheetosVideo}
-          >
-            {/* <img src={Cheetos1}></img> */}
-          </div>
-          {/* <div className={`${styles.CTA_cheetos} ${styles.cta}`}>
-          <CTA_Cheetos />
-        </div> */}
-        </div>
-        <div
-          className={styles.adidasContainer}
-          style={{
-            background: `url(${Adidas}) no-repeat center center / cover`,
-          }}
-          onClick={() => setPlayingVideo("adidas")}
-        >
-          <div
-          // className={styles.adidas}
-          >
-            {/* <img src={Adidas}></img> */}
-          </div>
-          {/* <div className={`${styles.CTA_adidas} ${styles.cta}`}>
-          <CTA_Adidas />
-        </div> */}
-        </div>
-        <div
-          className={styles.adidasContainer}
-          style={{
-            background: `url(${Adidas}) no-repeat center center / cover`,
-          }}
-          onClick={() => setPlayingVideo("adidas")}
-        >
-          <div
-          // className={styles.adidas}
-          >
-            {/* <img src={Adidas}></img> */}
-          </div>
-          {/* <div className={`${styles.CTA_adidas} ${styles.cta}`}>
-          <CTA_Adidas />
-        </div> */}
-        </div>
+        <footer className={styles.footer}>
+          <p>
+            Hecho desde México con amor.
+            <br />
+            Wachín 2020&#169;
+          </p>
+        </footer>
       </div>
-      {playingVideo === "cheetos" && (
-        <div className={styles.videoOverlay} onClick={clearPlayingVideo}>
-          <span onClick={clearPlayingVideo}>&times;</span>
-          <iframe
-            src="https://player.vimeo.com/video/259506177?autoplay=1&title=0&byline=0&portrait=0"
-            width="1200"
-            height={matchPoints && matchPoints.md ? 400 : 675}
-            frameBorder="0"
-            allow="autoplay; fullscreen"
-            allowFullScreen
-          ></iframe>
-        </div>
-      )}
-      {playingVideo === "adidas" && (
-        <div className={styles.videoOverlay} onClick={clearPlayingVideo}>
-          <span onClick={clearPlayingVideo}>&times;</span>
-          <iframe
-            src="https://player.vimeo.com/video/268828753?autoplay=1&title=0&byline=0&portrait=0"
-            width="1200"
-            height={matchPoints && matchPoints.md ? 300 : 675}
-            frameBorder="0"
-            allow="autoplay; fullscreen"
-            allowFullScreen
-          ></iframe>
-        </div>
-      )}
     </Layout>
   )
 }
